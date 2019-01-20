@@ -10,6 +10,7 @@
 		257F8AA621F4DEE900B27ECB /* Frappuccino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257F8A9C21F4DEE900B27ECB /* Frappuccino.framework */; };
 		257F8AAB21F4DEE900B27ECB /* FrappuccinoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F8AAA21F4DEE900B27ECB /* FrappuccinoTests.swift */; };
 		257F8AAD21F4DEE900B27ECB /* Frappuccino.h in Headers */ = {isa = PBXBuildFile; fileRef = 257F8A9F21F4DEE900B27ECB /* Frappuccino.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		257F8AF121F4DFA400B27ECB /* Frappuccino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F8AF021F4DFA400B27ECB /* Frappuccino.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		257F8AA521F4DEE900B27ECB /* FrappuccinoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrappuccinoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		257F8AAA21F4DEE900B27ECB /* FrappuccinoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrappuccinoTests.swift; sourceTree = "<group>"; };
 		257F8AAC21F4DEE900B27ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		257F8AF021F4DFA400B27ECB /* Frappuccino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frappuccino.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				257F8A9F21F4DEE900B27ECB /* Frappuccino.h */,
 				257F8AA021F4DEE900B27ECB /* Info.plist */,
+				257F8AF021F4DFA400B27ECB /* Frappuccino.swift */,
 			);
 			path = Frappuccino;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					257F8A9B21F4DEE900B27ECB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					257F8AA421F4DEE900B27ECB = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257F8AF121F4DFA400B27ECB /* Frappuccino.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		257F8AB121F4DEE900B27ECB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinna.Frappuccino;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		257F8AB221F4DEE900B27ECB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +399,7 @@
 		257F8AB421F4DEE900B27ECB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8T4P9D4TB2;
 				INFOPLIST_FILE = FrappuccinoTests/Info.plist;
@@ -409,6 +418,7 @@
 		257F8AB521F4DEE900B27ECB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8T4P9D4TB2;
 				INFOPLIST_FILE = FrappuccinoTests/Info.plist;

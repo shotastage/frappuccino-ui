@@ -4,10 +4,28 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Example.xcscheme_^#shared#^_</key>
+		<key>Example.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>25F22D3E21F4E12E00495483</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>25F22D5221F4E12F00495483</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>25F22D5D21F4E12F00495483</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

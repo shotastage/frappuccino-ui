@@ -14,6 +14,7 @@
 		25F22D4D21F4E12F00495483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F22D4B21F4E12F00495483 /* LaunchScreen.storyboard */; };
 		25F22D5821F4E12F00495483 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F22D5721F4E12F00495483 /* ExampleTests.swift */; };
 		25F22D6321F4E12F00495483 /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F22D6221F4E12F00495483 /* ExampleUITests.swift */; };
+		25F22D7221F4E23A00495483 /* Frappuccino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F22D7121F4E23A00495483 /* Frappuccino.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		25F22D5E21F4E12F00495483 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F22D6221F4E12F00495483 /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		25F22D6421F4E12F00495483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25F22D7121F4E23A00495483 /* Frappuccino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Frappuccino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25F22D7221F4E23A00495483 /* Frappuccino.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				25F22D5621F4E12F00495483 /* ExampleTests */,
 				25F22D6121F4E12F00495483 /* ExampleUITests */,
 				25F22D4021F4E12E00495483 /* Products */,
+				25F22D7021F4E23A00495483 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				25F22D6421F4E12F00495483 /* Info.plist */,
 			);
 			path = ExampleUITests;
+			sourceTree = "<group>";
+		};
+		25F22D7021F4E23A00495483 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25F22D7121F4E23A00495483 /* Frappuccino.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

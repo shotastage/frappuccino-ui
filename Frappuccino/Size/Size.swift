@@ -19,6 +19,17 @@ public struct Size {
     @available(iOS 11.0, *)
     public struct Safearea {
         
+        public static var available: Bool {
+            get {
+                if Safearea.bottom != 0 {
+                    return true
+                } else {
+                    return false
+                }
+            }
+        }
+        
+        
         public static var top: CGFloat {
             get {
                 let window = UIApplication.shared.keyWindow

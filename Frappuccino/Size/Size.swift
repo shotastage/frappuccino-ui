@@ -9,9 +9,28 @@
 import UIKit
 
 
-open class Size {
+public struct Size {
     
     public static let width = UIScreen.main.bounds.size.width
     
     public static let height = UIScreen.main.bounds.size.height
+    
+
+    @available(iOS 11.0, *)
+    public struct Safearea {
+        
+        public static var top: CGFloat {
+            get {
+                let window = UIApplication.shared.keyWindow
+                return window?.safeAreaInsets.top ?? 0
+            }
+        }
+        
+        public static var bottom: CGFloat {
+            get {
+                let window = UIApplication.shared.keyWindow
+                return window?.safeAreaInsets.bottom ?? 0
+            }
+        }
+    }
 }

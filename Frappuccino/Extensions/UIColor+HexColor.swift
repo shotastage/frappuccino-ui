@@ -1,5 +1,5 @@
 //
-//  UIKit+HexColor.swift
+//  UIColor+HexColor.swift
 //  Frappuccino
 //
 //  Created by Shota Shimazu on 2019/01/21.

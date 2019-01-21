@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ComponentsViewController.swift
 //  Example
 //
 //  Created by Shota Shimazu on 2019/01/21.
@@ -12,15 +12,22 @@ import YogaKit
 import Frappuccino
 
 
-class ViewController: UIViewController {
+final class ComponentsRootViewController: UINavigationController {
+    
+    override func viewDidLoad() {
+    }
+}
 
-
+final class ComponentsViewController: UIViewController {
+    
+    
     private let stackView = AloeStackView()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.navigationItem.title = "Components"
         
         let root = self.view!
         
@@ -46,8 +53,8 @@ class ViewController: UIViewController {
             label.text = "Label \(i)"
             stackView.addRow(label)
         }
-
-
+        
+        
         root.yoga.applyLayout(preservingOrigin: true)
     }
 }

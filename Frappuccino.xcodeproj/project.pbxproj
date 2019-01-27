@@ -12,6 +12,8 @@
 		252DD9A821FCC0D200A8D958 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DD9A721FCC0D200A8D958 /* View.swift */; };
 		252DD9AB21FCC0F200A8D958 /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DD9AA21FCC0F200A8D958 /* Stylesheet.swift */; };
 		252DD9AD21FCC12900A8D958 /* ComponentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DD9AC21FCC12900A8D958 /* ComponentSize.swift */; };
+		252DD9B121FDB35F00A8D958 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DD9B021FDB35F00A8D958 /* Header.swift */; };
+		252DD9B321FDB8A100A8D958 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DD9B221FDB8A100A8D958 /* Text.swift */; };
 		257F8AA621F4DEE900B27ECB /* Frappuccino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257F8A9C21F4DEE900B27ECB /* Frappuccino.framework */; };
 		257F8AAB21F4DEE900B27ECB /* FrappuccinoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F8AAA21F4DEE900B27ECB /* FrappuccinoTests.swift */; };
 		257F8AAD21F4DEE900B27ECB /* Frappuccino.h in Headers */ = {isa = PBXBuildFile; fileRef = 257F8A9F21F4DEE900B27ECB /* Frappuccino.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,6 +38,8 @@
 		252DD9A721FCC0D200A8D958 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		252DD9AA21FCC0F200A8D958 /* Stylesheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
 		252DD9AC21FCC12900A8D958 /* ComponentSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSize.swift; sourceTree = "<group>"; };
+		252DD9B021FDB35F00A8D958 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		252DD9B221FDB8A100A8D958 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		257F8A9C21F4DEE900B27ECB /* Frappuccino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Frappuccino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		257F8A9F21F4DEE900B27ECB /* Frappuccino.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Frappuccino.h; sourceTree = "<group>"; };
 		257F8AA021F4DEE900B27ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +95,15 @@
 			path = Stylesheet;
 			sourceTree = "<group>";
 		};
+		252DD9AF21FDB35200A8D958 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				252DD9B021FDB35F00A8D958 /* Header.swift */,
+				252DD9B221FDB8A100A8D958 /* Text.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
 		257F8A9221F4DEE900B27ECB = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +125,7 @@
 		257F8A9E21F4DEE900B27ECB /* Frappuccino */ = {
 			isa = PBXGroup;
 			children = (
+				252DD9AF21FDB35200A8D958 /* Text */,
 				252DD9A921FCC0E000A8D958 /* Stylesheet */,
 				250AE78B21F5722600E158C7 /* Size */,
 				250A79B621F561EF00577146 /* Buttons */,
@@ -252,10 +266,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				252DD9AD21FCC12900A8D958 /* ComponentSize.swift in Sources */,
+				252DD9B121FDB35F00A8D958 /* Header.swift in Sources */,
 				250AE78D21F5723600E158C7 /* Size.swift in Sources */,
 				25C1D2E021F55C480068E13B /* UIColor+HexColor.swift in Sources */,
 				252DD9A821FCC0D200A8D958 /* View.swift in Sources */,
 				257F8AF121F4DFA400B27ECB /* Frappuccino.swift in Sources */,
+				252DD9B321FDB8A100A8D958 /* Text.swift in Sources */,
 				252DD9AB21FCC0F200A8D958 /* Stylesheet.swift in Sources */,
 				250AE78F21F587FD00E158C7 /* BasicButtons.swift in Sources */,
 				25C1D2E321F55C8A0068E13B /* UIView+Size.swift in Sources */,

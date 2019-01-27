@@ -33,14 +33,14 @@ public struct Size {
         public static var top: CGFloat {
             get {
                 let window = UIApplication.shared.keyWindow
-                return window?.safeAreaInsets.top ?? 0
+                return window?.safeAreaInsets.top ?? 0.0
             }
         }
         
         public static var bottom: CGFloat {
             get {
                 let window = UIApplication.shared.keyWindow
-                return window?.safeAreaInsets.bottom ?? 0
+                return window?.safeAreaInsets.bottom ?? 0.0
             }
         }
     }

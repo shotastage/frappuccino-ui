@@ -20,9 +20,9 @@ final class MainViewController: UITabBarController {
         let tab2 = UtilViewController()
         tab2.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 2)
         
-        let nv1 = ComponentsRootViewController(rootViewController: tab1)
+        let nv1 = UINavigationController(rootViewController: tab1)
         
-        let nv2 = UtilRootViewController(rootViewController: tab2)
+        let nv2 = UINavigationController(rootViewController: tab2)
 
         setViewControllers([nv1, nv2], animated: false)
     }

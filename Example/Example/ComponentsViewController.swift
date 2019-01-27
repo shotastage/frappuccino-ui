@@ -12,11 +12,6 @@ import YogaKit
 import Frappuccino
 
 
-final class ComponentsRootViewController: UINavigationController {
-    
-    override func viewDidLoad() {
-    }
-}
 
 final class ComponentsViewController: UIViewController {
     

@@ -12,12 +12,13 @@
 		250AE79521F58A3D00E158C7 /* UtilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AE79421F58A3D00E158C7 /* UtilViewController.swift */; };
 		25A238032213CB73005CB500 /* HeadingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A238022213CB73005CB500 /* HeadingsViewController.swift */; };
 		25B0EF1121F60AF700866B87 /* SizeClassExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0EF1021F60AF700866B87 /* SizeClassExampleVC.swift */; };
+		25DB82E722146E40005CA47A /* Frappuccino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F22D7121F4E23A00495483 /* Frappuccino.framework */; };
+		25DB82E822146E40005CA47A /* Frappuccino.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25F22D7121F4E23A00495483 /* Frappuccino.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		25F22D4321F4E12E00495483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F22D4221F4E12E00495483 /* AppDelegate.swift */; };
 		25F22D4A21F4E12F00495483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25F22D4921F4E12F00495483 /* Assets.xcassets */; };
 		25F22D4D21F4E12F00495483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F22D4B21F4E12F00495483 /* LaunchScreen.storyboard */; };
 		25F22D5821F4E12F00495483 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F22D5721F4E12F00495483 /* ExampleTests.swift */; };
 		25F22D6321F4E12F00495483 /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F22D6221F4E12F00495483 /* ExampleUITests.swift */; };
-		25F22D7221F4E23A00495483 /* Frappuccino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F22D7121F4E23A00495483 /* Frappuccino.framework */; };
 		79F68E4D5CA25BF1A9492159 /* Pods_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECE6FC204CD6F092A199916 /* Pods_ExampleTests.framework */; };
 		9E85D3D40DD90E4421328EC8 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6DF672A7842F54FE08C984 /* Pods_Example.framework */; };
 		E5B1618C9B276E32913C0833 /* Pods_ExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A0DE0EF2EDCEC8EEF2B5A9 /* Pods_ExampleUITests.framework */; };
@@ -39,6 +40,20 @@
 			remoteInfo = Example;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25DB82E922146E40005CA47A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				25DB82E822146E40005CA47A /* Frappuccino.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		21A0DE0EF2EDCEC8EEF2B5A9 /* Pods_ExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,8 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25F22D7221F4E23A00495483 /* Frappuccino.framework in Frameworks */,
 				9E85D3D40DD90E4421328EC8 /* Pods_Example.framework in Frameworks */,
+				25DB82E722146E40005CA47A /* Frappuccino.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +221,7 @@
 				25F22D3C21F4E12E00495483 /* Frameworks */,
 				25F22D3D21F4E12E00495483 /* Resources */,
 				CF5830A9881F7A33C6134A87 /* [CP] Embed Pods Frameworks */,
+				25DB82E922146E40005CA47A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -603,7 +619,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pinna.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.frappuccino.example-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -622,7 +638,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pinna.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.frappuccino.example-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

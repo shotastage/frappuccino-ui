@@ -1,28 +1,24 @@
 //
-//  ComponentsViewController.swift
+//  HeadingsViewController.swift
 //  Example
 //
-//  Created by Shota Shimazu on 2019/01/21.
+//  Created by Shota Shimazu on 2019/02/13.
 //  Copyright © 2019 Shota Shimazu. All rights reserved.
 //
 
 import UIKit
-import AloeStackView
 import YogaKit
 import Frappuccino
+import AloeStackView
 
 
 
-final class ComponentsViewController: UIViewController {
-    
+final class HeadingsViewController: UIViewController {
     
     private let stackView = AloeStackView()
     
-    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.navigationItem.title = "Components"
+        self.navigationItem.title = "Headings"
         
         let root = self.view!
         
@@ -43,19 +39,17 @@ final class ComponentsViewController: UIViewController {
         }
         root.addSubview(stackView)
         
-        registerMenu(title: "Headings", handler:  {
-            self.toHeadings()
-        })
         
+        registerMenu(title: "SafeArea Top: \(Size.Safearea.top)")
+        registerMenu(title: "SafeArea Bottom: \(Size.Safearea.bottom)")
+        registerMenu(title: "Screen Size Width: \(Size.width)")
+        registerMenu(title: "Screen Size Height: \(Size.height)")
         
         root.yoga.applyLayout(preservingOrigin: true)
     }
-}
-
-
-
-extension ComponentsViewController {
-    func registerMenu(title: String, handler: Optional<() -> Void> = nil) {
+    
+    
+    private func registerMenu(title: String, handler: Optional<() -> Void> = nil) {
         let label = UILabel()
         label.text = title
         stackView.addRow(label)
@@ -70,18 +64,5 @@ extension ComponentsViewController {
             
             label.isUserInteractionEnabled = true
         }
-    }
-}
-
-extension ComponentsViewController {
-    
-    func toHeadings() {
-        // Alert.confirm(message: "Setting screen does not implemented now !")
-        
-        let next: UIViewController = HeadingsViewController()
-        //next.modalTransitionStyle = .crossDissolve
-        
-        // present(next, animated: true, completion: nil)
-        self.show(next, sender: nil)
     }
 }

@@ -20,7 +20,7 @@ open class Heading: UILabel {
         super.init(frame: frame)
     }
     
-    convenience init(text: String, size: Heading.Headings = .h1) {
+    convenience init(text: String, fontSize: Heading.Headings = .h1) {
         self.init()
         
         self.frame = CGRect(
@@ -30,7 +30,7 @@ open class Heading: UILabel {
             height: font.lineHeight
         )
         
-        self.fontTextAttributes = [NSAttributedString.Key.font: UIFont(name: self.fontName, size: 22)!]
+        self.fontTextAttributes = [NSAttributedString.Key.font: UIFont(name: self.fontName, size: fontSize.rawValue)!]
 
     }
     
@@ -38,12 +38,12 @@ open class Heading: UILabel {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public enum Headings {
-        case h1
-        case h2
-        case h3
-        case h4
-        case h5
-        case h6
+    public enum Headings: CGFloat {
+        case h1 = 22.0
+        case h2 = 20.0
+        case h3 = 18.0
+        case h4 = 16.0
+        case h5 = 14.0
+        case h6 = 12.0
     }
 }

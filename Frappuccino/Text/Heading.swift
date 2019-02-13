@@ -27,44 +27,21 @@ open class Heading: UILabel {
     public convenience init(text: String, size headingSize: Heading.Headings = .h1) {
         self.init()
         
-        
-        /*
-        
-        self.frame = CGRect(
-            x: frame.origin.x,
-            y: frame.origin.y,
-            width: Size.width,
-            height: font.lineHeight
-        )
-        
-        self.fontTextAttributes = [NSAttributedString.Key.font: UIFont(name: self.fontName, size: fontSize.rawValue)!]
-        */
-        
-        self.backgroundColor = .red
         self.text = text
         self.numberOfLines = 1
-        self.fontSize = headingSize.rawValue
+        self.font = self.font.withSize(headingSize.rawValue)
     }
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override open func drawText(in rect: CGRect) {
-        
-        print("LOG: \(self.fontSize)")
-        self.font.withSize(self.fontSize)
-        
-        super.drawText(in: rect)
-
-    }
-    
     public enum Headings: CGFloat {
-        case h1 = 30.0
-        case h2 = 20.0
-        case h3 = 18.0
-        case h4 = 16.0
-        case h5 = 14.0
+        case h1 = 35.0
+        case h2 = 28.0
+        case h3 = 23.0
+        case h4 = 18.0
+        case h5 = 15.0
         case h6 = 12.0
     }
 }

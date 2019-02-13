@@ -23,3 +23,8 @@ open class View: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+
+open class RoundView: View {
+    
+}

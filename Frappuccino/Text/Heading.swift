@@ -14,14 +14,21 @@ open class Heading: UILabel {
     
     public var fontName: String = "Helvetica-Bold"
     
+    public var fontSize: CGFloat = 22.0
+    
+    
+    
     private var fontTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Helvetica-Bold", size: 22)!]
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
     }
     
-    convenience init(text: String, fontSize: Heading.Headings = .h1) {
+    public convenience init(text: String, size headingSize: Heading.Headings = .h1) {
         self.init()
+        
+        
+        /*
         
         self.frame = CGRect(
             x: frame.origin.x,
@@ -31,15 +38,29 @@ open class Heading: UILabel {
         )
         
         self.fontTextAttributes = [NSAttributedString.Key.font: UIFont(name: self.fontName, size: fontSize.rawValue)!]
-
+        */
+        
+        self.backgroundColor = .red
+        self.text = text
+        self.numberOfLines = 1
+        self.fontSize = headingSize.rawValue
     }
     
     required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+    }
+    
+    override open func drawText(in rect: CGRect) {
+        
+        print("LOG: \(self.fontSize)")
+        self.font.withSize(self.fontSize)
+        
+        super.drawText(in: rect)
+
     }
     
     public enum Headings: CGFloat {
-        case h1 = 22.0
+        case h1 = 30.0
         case h2 = 20.0
         case h3 = 18.0
         case h4 = 16.0

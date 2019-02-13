@@ -40,29 +40,27 @@ final class HeadingsViewController: UIViewController {
         root.addSubview(stackView)
         
         
-        registerMenu(title: "SafeArea Top: \(Size.Safearea.top)")
-        registerMenu(title: "SafeArea Bottom: \(Size.Safearea.bottom)")
-        registerMenu(title: "Screen Size Width: \(Size.width)")
-        registerMenu(title: "Screen Size Height: \(Size.height)")
+        let h1 = Heading(text: "Heading 1", size: .h1)
+        stackView.addRow(h1)
+        
+        let h2 = Heading(text: "Heading 2", size: .h2)
+        stackView.addRow(h2)
+        
+        let h3 = Heading(text: "Heading 3", size: .h3)
+        stackView.addRow(h3)
+        
+        let h4 = Heading(text: "Heading 4", size: .h4)
+        stackView.addRow(h4)
+        
+        let h5 = Heading(text: "Heading 5", size: .h5)
+        stackView.addRow(h5)
+        
+        let h6 = Heading(text: "Heading 6", size: .h6)
+        stackView.addRow(h6)
         
         root.yoga.applyLayout(preservingOrigin: true)
     }
     
     
-    private func registerMenu(title: String, handler: Optional<() -> Void> = nil) {
-        let label = UILabel()
-        label.text = title
-        stackView.addRow(label)
-        
-        if handler != nil {
-            stackView.setTapHandler(
-                forRow: label,
-                handler: { label in
-                    handler!()
-                }
-            )
-            
-            label.isUserInteractionEnabled = true
-        }
-    }
+    
 }

@@ -61,6 +61,4 @@ final class HeadingsViewController: UIViewController {
         root.yoga.applyLayout(preservingOrigin: true)
     }
     
-    
-    
 }

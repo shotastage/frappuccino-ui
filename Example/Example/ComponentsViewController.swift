@@ -47,6 +47,14 @@ final class ComponentsViewController: UIViewController {
             self.toHeadings()
         })
         
+        registerMenu(title: "Buttons", handler:  {
+            self.toButtons()
+        })
+        
+        registerMenu(title: "Separators", handler: {
+            self.toSeparators()
+        })
+        
         
         root.yoga.applyLayout(preservingOrigin: true)
     }
@@ -82,6 +90,21 @@ extension ComponentsViewController {
         //next.modalTransitionStyle = .crossDissolve
         
         // present(next, animated: true, completion: nil)
+        self.show(next, sender: nil)
+    }
+    
+    func toButtons() {
+        // Alert.confirm(message: "Setting screen does not implemented now !")
+        
+        let next: UIViewController = ButtonsViewController()
+        //next.modalTransitionStyle = .crossDissolve
+        
+        // present(next, animated: true, completion: nil)
+        self.show(next, sender: nil)
+    }
+    
+    func toSeparators() {
+        let next: UIViewController = SeparatorsViewController()
         self.show(next, sender: nil)
     }
 }

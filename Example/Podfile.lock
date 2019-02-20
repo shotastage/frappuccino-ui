@@ -1,7 +1,7 @@
 PODS:
   - AloeStackView (1.0.1)
   - Yoga (1.9.0)
-  - YogaKit (1.9.0):
+  - YogaKit (1.10.0):
     - Yoga (~> 1.9)
 
 DEPENDENCIES:
@@ -17,8 +17,8 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AloeStackView: d22c006da4510db5e220968234174654b5ed6ea5
   Yoga: aaae8abea68951f60bee05f6277d3eed90bb91bb
-  YogaKit: d447a9bb808718e6f58e52a2255a8050081a3ead
+  YogaKit: 3107fd5c2c233b540a1c5e376b95ac2c40398d6b
 
 PODFILE CHECKSUM: f16653920a0061063494de675bdf169fe2975be2
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0

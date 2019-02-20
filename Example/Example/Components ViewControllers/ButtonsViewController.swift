@@ -48,11 +48,14 @@ final class ButtonsViewController: UIViewController {
         
         
         let basicButton1 = Button(text: "Basic Button")
-    
-        //defaultButton.setTitle("Basic Button", for: .normal)
+        basicButton1.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
+        basicButton1.setTitle("Basic Button", for: .normal)
+        basicButton1.setTitleColor(.red, for: .normal)
         basicButton1.configureLayout { (layout) in
             layout.isEnabled = true
+            layout.top = 20
         }
+        root.addSubview(basicButton1)
         
         root.yoga.applyLayout(preservingOrigin: true)
     }

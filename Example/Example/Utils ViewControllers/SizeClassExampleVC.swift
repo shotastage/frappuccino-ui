@@ -42,8 +42,10 @@ final class SizeExampleViewController: UIViewController {
         
         registerMenu(title: "SafeArea Top: \(Size.Safearea.top)")
         registerMenu(title: "SafeArea Bottom: \(Size.Safearea.bottom)")
+        registerMenu(title: "Status Bar Height: \(Size.statusbarHeight)")
         registerMenu(title: "Screen Size Width: \(Size.width)")
         registerMenu(title: "Screen Size Height: \(Size.height)")
+
         
         root.yoga.applyLayout(preservingOrigin: true)
     }

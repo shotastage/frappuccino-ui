@@ -11,9 +11,11 @@ import UIKit
 
 public struct Size {
     
-    public static let width = UIScreen.main.bounds.size.width
+    public static let width: CGFloat = UIScreen.main.bounds.size.width
     
-    public static let height = UIScreen.main.bounds.size.height
+    public static let height: CGFloat = UIScreen.main.bounds.size.height
+    
+    public static let statusbarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
     
 
     @available(iOS 11.0, *)

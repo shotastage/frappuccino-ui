@@ -43,11 +43,18 @@ final class UtilViewController: UIViewController {
             self.toSizeClass()
         })
         
+        registerMenu(title: "Margins", handler: {
+            self.toMarginClass()
+        })
+        
         
         root.yoga.applyLayout(preservingOrigin: true)
     }
-    
-    
+}
+
+
+
+extension UtilViewController {
     private func registerMenu(title: String, handler: Optional<() -> Void> = nil) {
         let label = UILabel()
         label.text = title
@@ -58,21 +65,26 @@ final class UtilViewController: UIViewController {
                 forRow: label,
                 handler: { label in
                     handler!()
-                }
+            }
             )
             
             label.isUserInteractionEnabled = true
         }
     }
-    
-    
+}
+
+
+
+extension UtilViewController {
     func toSizeClass() {
-        // Alert.confirm(message: "Setting screen does not implemented now !")
-        
         let next: UIViewController = SizeExampleViewController()
-        //next.modalTransitionStyle = .crossDissolve
         
-        // present(next, animated: true, completion: nil)
+        self.show(next, sender: nil)
+    }
+    
+    func toMarginClass() {
+        let next: UIViewController = MarginListExampleViewController()
+        
         self.show(next, sender: nil)
     }
 }

@@ -11,5 +11,5 @@ import Foundation
 
 public struct Margin {
     
-    public let small: CGFloat = 10
+    public static let small: CGFloat = 10
 }

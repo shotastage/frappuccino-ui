@@ -32,7 +32,9 @@ final class MarginListExampleViewController: UIViewController {
             layout.flexWrap = .noWrap
         }
         
-       
+    
+        
+        registerMargin(title: "SS")
         
         root.yoga.applyLayout(preservingOrigin: true)
     }
@@ -45,6 +47,7 @@ final class MarginListExampleViewController: UIViewController {
         marginView.frame.size.height = 20
         marginView.frame.size.width = Margin.small
         
-        stackView.addRow(marginView)
+        self.view.addSubview(marginView)
+        
     }
 }

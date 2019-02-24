@@ -45,8 +45,6 @@ final class SizeExampleViewController: UIViewController {
         registerMenu(title: "Status Bar Height: \(Size.statusbarHeight)")
         registerMenu(title: "Screen Size Width: \(Size.width)")
         registerMenu(title: "Screen Size Height: \(Size.height)")
-        registerMargin(title: "SS")
-
         
         root.yoga.applyLayout(preservingOrigin: true)
     }
@@ -67,16 +65,5 @@ final class SizeExampleViewController: UIViewController {
             
             label.isUserInteractionEnabled = true
         }
-    }
-    
-    
-    private func registerMargin(title: String) {
-        
-        let marginView = UIView()
-        marginView.backgroundColor = .red
-        marginView.frame.size.height = 20
-        marginView.frame.size.width = Margin.small
-       
-        stackView.addRow(marginView)
     }
 }

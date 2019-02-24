@@ -30,6 +30,8 @@ open class Heading: UILabel {
         self.text = text
         self.numberOfLines = 1
         self.font = self.font.withSize(headingSize.rawValue)
+        self.frame.size.width = Size.width
+        self.textAlignment = .left
     }
     
     required public init?(coder aDecoder: NSCoder) {

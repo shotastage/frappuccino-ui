@@ -35,13 +35,30 @@ final class SeparatorsViewController: UIViewController {
         
         
         let marginView: MarginSeparator = MarginSeparator()
-        marginView.backgroundColor = .cyan
         marginView.configureLayout { (layout) in
             layout.isEnabled = true
+            layout.width = YGValue(Size.width)
+            layout.height = 100
         }
         root.addSubview(marginView)
         
         
-        root.yoga.applyLayout(preservingOrigin: true)
+        let titleLabel: Heading = Heading(text: "Separator Line", size: .h2)
+        titleLabel.configureLayout { (layout) in
+            layout.isEnabled = true
+            layout.width = YGValue(Size.width)
+        }
+        root.addSubview(titleLabel)
+        
+        
+        let separatorView: Separator = Separator()
+        separatorView.configureLayout { (layout) in
+            layout.isEnabled = true
+        }
+        root.addSubview(separatorView)
+        
+        
+        
+        root.yoga.applyLayout(preservingOrigin: false)
     }
 }

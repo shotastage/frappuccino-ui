@@ -14,7 +14,7 @@ public protocol UIViewSizeProperties: class { }
 
 extension UIViewSizeProperties where Self: UIView {
 
-    var width: CGFloat {
+    public var width: CGFloat {
         get {
             return self.frame.size.width
         }
@@ -24,7 +24,7 @@ extension UIViewSizeProperties where Self: UIView {
         }
     }
     
-    var height: CGFloat {
+    public var height: CGFloat {
         get{
             return self.frame.size.height
         }
@@ -34,7 +34,7 @@ extension UIViewSizeProperties where Self: UIView {
         }
     }
     
-    var x: CGFloat {
+    public var x: CGFloat {
         get {
             return self.frame.origin.x
         }
@@ -44,7 +44,7 @@ extension UIViewSizeProperties where Self: UIView {
         }
     }
     
-    var y: CGFloat {
+    public var y: CGFloat {
         get{
             return self.frame.origin.y
         }
@@ -54,7 +54,7 @@ extension UIViewSizeProperties where Self: UIView {
         }
     }
     
-    var right: CGFloat{
+    public var right: CGFloat{
         get {
             return self.frame.origin.x + self.frame.size.width
         }
@@ -64,7 +64,7 @@ extension UIViewSizeProperties where Self: UIView {
         }
     }
     
-    var bottom: CGFloat{
+    public var bottom: CGFloat{
         get {
             return self.frame.origin.y + self.frame.size.height
         }

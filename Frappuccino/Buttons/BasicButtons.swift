@@ -22,6 +22,7 @@ open class Button: UIButton {
         
         self.titleLabel?.text = title
         self.tintColor = UIColor(hex: "333333")
+        
     }
     
     required public init?(coder aDecoder: NSCoder) {

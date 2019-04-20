@@ -17,6 +17,7 @@ final class ButtonsViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        self.navigationController?.navigationBar.isTranslucent = false
         self.navigationItem.title = "Buttons"
         
         let root = self.view!
@@ -24,7 +25,7 @@ final class ButtonsViewController: UIViewController {
         root.configureLayout { (layout) in
             layout.isEnabled = true
             layout.width = YGValue(Size.width)
-            layout.height = YGValue(Size.height)
+            // layout.height = YGValue(Size.height)
             layout.flexDirection = .column
             layout.justifyContent = .flexStart
             layout.alignItems = .center

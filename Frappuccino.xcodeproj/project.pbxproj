@@ -22,6 +22,8 @@
 		257F8AF121F4DFA400B27ECB /* Frappuccino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F8AF021F4DFA400B27ECB /* Frappuccino.swift */; };
 		25C1D2E021F55C480068E13B /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D2DF21F55C480068E13B /* UIColor+HexColor.swift */; };
 		25C1D2E321F55C8A0068E13B /* UIView+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D2E221F55C8A0068E13B /* UIView+Size.swift */; };
+		25C46699226B296E00363A9E /* NavigationBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C46698226B296E00363A9E /* NavigationBarController.swift */; };
+		25C4669C226B63E100363A9E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4669B226B63E100363A9E /* TabBarController.swift */; };
 		25EE4D5722228F9800F8760D /* Margin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EE4D5622228F9800F8760D /* Margin.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		257F8AF021F4DFA400B27ECB /* Frappuccino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frappuccino.swift; sourceTree = "<group>"; };
 		25C1D2DF21F55C480068E13B /* UIColor+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
 		25C1D2E221F55C8A0068E13B /* UIView+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Size.swift"; sourceTree = "<group>"; };
+		25C46698226B296E00363A9E /* NavigationBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarController.swift; sourceTree = "<group>"; };
+		25C4669B226B63E100363A9E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		25EE4D5622228F9800F8760D /* Margin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Margin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +145,8 @@
 		257F8A9E21F4DEE900B27ECB /* Frappuccino */ = {
 			isa = PBXGroup;
 			children = (
+				25C4669A226B63D200363A9E /* TabBar */,
+				25C46697226B295800363A9E /* NavigationBar */,
 				255A7171221C70C70073B47A /* Separators */,
 				25DB82E322146A29005CA47A /* View */,
 				252DD9AF21FDB35200A8D958 /* Text */,
@@ -171,6 +177,22 @@
 				25C1D2E221F55C8A0068E13B /* UIView+Size.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		25C46697226B295800363A9E /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				25C46698226B296E00363A9E /* NavigationBarController.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		25C4669A226B63D200363A9E /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				25C4669B226B63E100363A9E /* TabBarController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		25DB82E322146A29005CA47A /* View */ = {
@@ -293,6 +315,8 @@
 				255A7173221C71660073B47A /* SeparatorView.swift in Sources */,
 				252DD9AD21FCC12900A8D958 /* ComponentSize.swift in Sources */,
 				25EE4D5722228F9800F8760D /* Margin.swift in Sources */,
+				25C4669C226B63E100363A9E /* TabBarController.swift in Sources */,
+				25C46699226B296E00363A9E /* NavigationBarController.swift in Sources */,
 				252DD9B121FDB35F00A8D958 /* Heading.swift in Sources */,
 				250AE78D21F5723600E158C7 /* Size.swift in Sources */,
 				25C1D2E021F55C480068E13B /* UIColor+HexColor.swift in Sources */,

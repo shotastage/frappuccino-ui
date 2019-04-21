@@ -24,6 +24,7 @@
 		25C1D2E321F55C8A0068E13B /* UIView+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D2E221F55C8A0068E13B /* UIView+Size.swift */; };
 		25C46699226B296E00363A9E /* NavigationBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C46698226B296E00363A9E /* NavigationBarController.swift */; };
 		25C4669C226B63E100363A9E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4669B226B63E100363A9E /* TabBarController.swift */; };
+		25C4669E226B6EFE00363A9E /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4669D226B6EFE00363A9E /* CircleButton.swift */; };
 		25EE4D5722228F9800F8760D /* Margin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EE4D5622228F9800F8760D /* Margin.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		25C1D2E221F55C8A0068E13B /* UIView+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Size.swift"; sourceTree = "<group>"; };
 		25C46698226B296E00363A9E /* NavigationBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarController.swift; sourceTree = "<group>"; };
 		25C4669B226B63E100363A9E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		25C4669D226B6EFE00363A9E /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		25EE4D5622228F9800F8760D /* Margin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Margin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				250AE78E21F587FD00E158C7 /* BasicButtons.swift */,
+				25C4669D226B6EFE00363A9E /* CircleButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				252DD9A821FCC0D200A8D958 /* View.swift in Sources */,
 				257F8AF121F4DFA400B27ECB /* Frappuccino.swift in Sources */,
 				252DD9B321FDB8A100A8D958 /* Text.swift in Sources */,
+				25C4669E226B6EFE00363A9E /* CircleButton.swift in Sources */,
 				252DD9AB21FCC0F200A8D958 /* Stylesheet.swift in Sources */,
 				250AE78F21F587FD00E158C7 /* BasicButtons.swift in Sources */,
 				25C1D2E321F55C8A0068E13B /* UIView+Size.swift in Sources */,

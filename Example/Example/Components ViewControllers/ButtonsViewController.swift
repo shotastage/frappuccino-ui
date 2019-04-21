@@ -25,16 +25,13 @@ final class ButtonsViewController: UIViewController {
         root.configureLayout { (layout) in
             layout.isEnabled = true
             layout.width = YGValue(Size.width)
-            // layout.height = YGValue(Size.height)
+            layout.height = YGValue(Size.height)
             layout.flexDirection = .column
             layout.justifyContent = .flexStart
             layout.alignItems = .center
             layout.flexWrap = .noWrap
         }
         
-        
-        
-      
 
         
         let defaultButton = UIButton()
@@ -43,7 +40,7 @@ final class ButtonsViewController: UIViewController {
         defaultButton.setTitleColor(.blue, for: .normal)
         defaultButton.configureLayout { (layout) in
             layout.isEnabled = true
-            layout.top = YGValue((self.navigationController?.navigationBar.bounds.height)! + Size.Safearea.top + 30)
+            layout.top = 20
         }
         root.addSubview(defaultButton)
         
@@ -54,10 +51,22 @@ final class ButtonsViewController: UIViewController {
         basicButton1.setTitleColor(.red, for: .normal)
         basicButton1.configureLayout { (layout) in
             layout.isEnabled = true
-            layout.top = 20
+            layout.top = 50
         }
         root.addSubview(basicButton1)
         
-        root.yoga.applyLayout(preservingOrigin: true)
+        
+        
+        let circleButton1 = CircleButton()
+        circleButton1.size = 80
+        circleButton1.backgroundColor = .red
+        circleButton1.configureLayout { (layout) in
+            layout.isEnabled = true
+            layout.top = 80
+        }
+        root.addSubview(circleButton1)
+        
+        self.view.yoga.applyLayout(preservingOrigin: true)
+
     }
 }

@@ -54,7 +54,7 @@ extension UIViewSizeProperties where Self: UIView {
         }
     }
     
-    public var right: CGFloat{
+    public var right: CGFloat {
         get {
             return self.frame.origin.x + self.frame.size.width
         }
@@ -64,7 +64,7 @@ extension UIViewSizeProperties where Self: UIView {
         }
     }
     
-    public var bottom: CGFloat{
+    public var bottom: CGFloat {
         get {
             return self.frame.origin.y + self.frame.size.height
         }

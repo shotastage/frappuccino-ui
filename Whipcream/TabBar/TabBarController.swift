@@ -24,8 +24,6 @@ open class TabBarController: UITabBarController, UITabBarControllerDelegate {
         removeTabbarItemsText()
         provideStyle()
         
-        //object_setClass(self.tabBar, PINNATabBar.self)
-        //(self.tabBar as? PINNATabBar)?.compose()
     }
     
     required public init?(coder aDecoder: NSCoder) {

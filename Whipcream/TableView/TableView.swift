@@ -12,7 +12,7 @@ import UIKit
 
 open class TableView: UITableView {
     
-    var isNoneSeparator = false
+    public var isNoneSeparator = false
     
     override public init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)

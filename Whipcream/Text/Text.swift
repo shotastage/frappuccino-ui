@@ -24,12 +24,12 @@ open class Text: UIView {
     public var attributedText: NSAttributedString? // default is nil
 
     
-    convenience init(text: String, size: Text.TextSize = .bold) {
+    convenience public init(text: String, size: Text.TextSize = .bold) {
         self.init()
     }
     
     
-    enum TextSize {
+    public enum TextSize {
         case bold
     }
 }

@@ -13,9 +13,9 @@
 		255A7177221C72140073B47A /* SeparatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255A7176221C72140073B47A /* SeparatorsViewController.swift */; };
 		25A238032213CB73005CB500 /* HeadingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A238022213CB73005CB500 /* HeadingsViewController.swift */; };
 		25B0EF1121F60AF700866B87 /* SizeClassExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0EF1021F60AF700866B87 /* SizeClassExampleVC.swift */; };
+		25C5C12E226C7AC4001BB7D5 /* Whipcream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C5C12D226C7AC4001BB7D5 /* Whipcream.framework */; };
+		25C5C12F226C7AC4001BB7D5 /* Whipcream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25C5C12D226C7AC4001BB7D5 /* Whipcream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		25D532032215BAB000D9B90B /* ButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D532022215BAB000D9B90B /* ButtonsViewController.swift */; };
-		25DB82E722146E40005CA47A /* Frappuccino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F22D7121F4E23A00495483 /* Frappuccino.framework */; };
-		25DB82E822146E40005CA47A /* Frappuccino.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25F22D7121F4E23A00495483 /* Frappuccino.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		25EE4D592222923E00F8760D /* MarginListExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EE4D582222923E00F8760D /* MarginListExampleVC.swift */; };
 		25F22D4321F4E12E00495483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F22D4221F4E12E00495483 /* AppDelegate.swift */; };
 		25F22D4A21F4E12F00495483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25F22D4921F4E12F00495483 /* Assets.xcassets */; };
@@ -51,7 +51,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				25DB82E822146E40005CA47A /* Frappuccino.framework in Embed Frameworks */,
+				25C5C12F226C7AC4001BB7D5 /* Whipcream.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +66,7 @@
 		255A7176221C72140073B47A /* SeparatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorsViewController.swift; sourceTree = "<group>"; };
 		25A238022213CB73005CB500 /* HeadingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingsViewController.swift; sourceTree = "<group>"; };
 		25B0EF1021F60AF700866B87 /* SizeClassExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeClassExampleVC.swift; sourceTree = "<group>"; };
+		25C5C12D226C7AC4001BB7D5 /* Whipcream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Whipcream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D532022215BAB000D9B90B /* ButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
 		25EE4D582222923E00F8760D /* MarginListExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarginListExampleVC.swift; sourceTree = "<group>"; };
 		25F22D3F21F4E12E00495483 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,8 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25C5C12E226C7AC4001BB7D5 /* Whipcream.framework in Frameworks */,
 				9E85D3D40DD90E4421328EC8 /* Pods_Example.framework in Frameworks */,
-				25DB82E722146E40005CA47A /* Frappuccino.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +142,7 @@
 		25F22D3621F4E12E00495483 = {
 			isa = PBXGroup;
 			children = (
+				25C5C12D226C7AC4001BB7D5 /* Whipcream.framework */,
 				25F22D4121F4E12E00495483 /* Example */,
 				25F22D5621F4E12F00495483 /* ExampleTests */,
 				25F22D6121F4E12F00495483 /* ExampleUITests */,

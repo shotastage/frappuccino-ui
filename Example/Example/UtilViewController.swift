@@ -9,7 +9,7 @@
 import UIKit
 import YogaKit
 import AloeStackView
-import Frappuccino
+import Whipcream
 
 
 final class UtilViewController: UIViewController {

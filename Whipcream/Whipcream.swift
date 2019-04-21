@@ -8,6 +8,6 @@
 
 import Foundation
 
-open class Frappuccino {
+open class Whipcream {
     static let version = "0.0.1"
 }

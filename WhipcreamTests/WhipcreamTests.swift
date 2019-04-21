@@ -9,7 +9,7 @@
 import XCTest
 @testable import Frappuccino
 
-class FrappuccinoTests: XCTestCase {
+class WhipcreamTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

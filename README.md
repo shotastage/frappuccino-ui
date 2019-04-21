@@ -1,4 +1,4 @@
-# Frappuccino UI
+# Whipcream UI
 
 Fundamental UI appearance and utilities for PINNA.
 

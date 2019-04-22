@@ -25,7 +25,7 @@ open class CircleButton: UIButton {
         self.backgroundColor = UIColor(hex: "ff0033")
         
         // Box-shadow
-        if boxShadow == .on {
+        if boxShadow.boolean {
             self.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
             self.layer.shadowColor = UIColor(hex: "ff0033").cgColor
             self.layer.shadowOpacity = 0.6

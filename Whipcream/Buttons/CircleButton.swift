@@ -11,7 +11,9 @@ import UIKit
 
 open class CircleButton: UIButton {
     
-    public var size: CGFloat = 50
+    public var size: CGFloat = 55
+    
+    public var boxShadow: OnOff = .off
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -19,8 +21,16 @@ open class CircleButton: UIButton {
         self.frame.size.width = size
         self.frame.size.height = size
         self.layer.cornerRadius = 0.5 * self.bounds.size.width
-        self.clipsToBounds = true
-        self.backgroundColor = UIColor(hex: "f90c6b")
+        self.clipsToBounds = false
+        self.backgroundColor = UIColor(hex: "ff0033")
+        
+        // Box-shadow
+        if boxShadow == .on {
+            self.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+            self.layer.shadowColor = UIColor(hex: "ff0033").cgColor
+            self.layer.shadowOpacity = 0.6
+            self.layer.shadowRadius = 4
+        }
     }
     
     required public init?(coder aDecoder: NSCoder) {

@@ -12,14 +12,14 @@ import UIKit
 
 open class TableView: UITableView {
     
-    public var isNoneSeparator = false
+    public var isNoneSeparator: OnOff = .off
     
     override public init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         
         self.separatorInset = UIEdgeInsets.zero
         
-        if isNoneSeparator {
+        if isNoneSeparator.boolean {
             self.separatorStyle = .none
         }
     }

@@ -23,7 +23,6 @@ open class TabBarController: UITabBarController, UITabBarControllerDelegate {
         
         removeTabbarItemsText()
         provideStyle()
-        
     }
     
     required public init?(coder aDecoder: NSCoder) {

@@ -16,6 +16,7 @@ open class Heading: UILabel {
     
     public var fontSize: CGFloat = 22.0
     
+    public var color: UIColor = UIColor(hex: "333333")
     
     
     private var fontTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Helvetica-Bold", size: 22)!]
@@ -32,6 +33,7 @@ open class Heading: UILabel {
         self.font = self.font.withSize(headingSize.rawValue)
         self.frame.size.width = Size.width - Margin.small
         self.textAlignment = .left
+        self.textColor = self.color
     }
     
     required public init?(coder aDecoder: NSCoder) {

@@ -12,6 +12,9 @@ import UIKit
 
 open class Button: UIButton {
     
+    public var textColor: UIColor = UIColor(hex: "333333")
+    
+    
     public convenience init(text: String) {
         self.init(title: text, buttonType: "TEST")
     }
@@ -21,7 +24,7 @@ open class Button: UIButton {
         super.init(frame: .zero)
         
         self.titleLabel?.text = title
-        self.tintColor = UIColor(hex: "333333")
+        self.tintColor = self.textColor
         
     }
     

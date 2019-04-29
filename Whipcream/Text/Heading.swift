@@ -12,15 +12,22 @@ import UIKit
 
 open class Heading: UILabel {
     
+    /// Font propertoes
     public var fontName: String = "Helvetica-Bold"
     
     public var fontSize: CGFloat = 22.0
     
     public var color: UIColor = UIColor(hex: "333333")
     
+    /// Layout properties
     public var margin: Margin = Margin()
     
-    private var fontTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Helvetica-Bold", size: 22)!]
+    
+    private var fontTextAttributes: [NSAttributedString.Key: UIFont] {
+        get {
+            return [NSAttributedString.Key.font: UIFont(name: self.fontName, size: self.fontSize)!]
+        }
+    }
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
@@ -54,5 +61,9 @@ open class Heading: UILabel {
         case h4 = 18.0
         case h5 = 15.0
         case h6 = 12.0
+        
+        func free(size: CGFloat) -> CGFloat {
+            return size
+        }
     }
 }

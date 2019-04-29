@@ -18,6 +18,8 @@ open class Heading: UILabel {
     
     public var color: UIColor = UIColor(hex: "333333")
     
+    public var margin: Margin = Margin()
+    
     private var fontTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Helvetica-Bold", size: 22)!]
     
     override public init(frame: CGRect) {
@@ -30,13 +32,19 @@ open class Heading: UILabel {
         self.text = text
         self.numberOfLines = 1
         self.font = self.font.withSize(headingSize.rawValue)
-        self.frame.size.width = Size.width - Margin.small
+        self.frame.size.width = Size.width - MarginSize.small
         self.textAlignment = .left
         self.textColor = self.color
     }
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    override open func drawText(in rect: CGRect) {
+        let newRect = rect.inset(by: margin.view)
+        
+        super.drawText(in: newRect)
     }
     
     public enum Headings: CGFloat {

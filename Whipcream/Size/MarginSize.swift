@@ -1,5 +1,5 @@
 //
-//  Margin.swift
+//  MarginSize.swift
 //  Frappuccino
 //
 //  Created by Shota Shimazu on 2019/02/24.
@@ -9,7 +9,7 @@
 import Foundation
 
 
-public struct Margin {
+public struct MarginSize {
     
     public static let small: CGFloat = 10
 }

@@ -61,9 +61,9 @@ open class Heading: UILabel {
         case h4 = 18.0
         case h5 = 15.0
         case h6 = 12.0
-        
-        public func free(size: CGFloat) -> CGFloat {
-            return size
-        }
+    }
+    
+    public static func free(size: CGFloat) -> CGFloat {
+        return size
     }
 }

@@ -18,6 +18,7 @@
 		255A7175221C718A0073B47A /* MarginSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255A7174221C718A0073B47A /* MarginSeparator.swift */; };
 		255B6038226DC6FD00D5BDD9 /* UIView+Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255B6037226DC6FD00D5BDD9 /* UIView+Configure.swift */; };
 		255B603A226DDD0300D5BDD9 /* Whipcream+Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255B6039226DDD0300D5BDD9 /* Whipcream+Control.swift */; };
+		2561639F2276C3B000B5A7B3 /* MarginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561639E2276C3B000B5A7B3 /* MarginView.swift */; };
 		2576F7ED226CB72700E6FAB3 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576F7EC226CB72700E6FAB3 /* TableView.swift */; };
 		257F8AA621F4DEE900B27ECB /* Whipcream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257F8A9C21F4DEE900B27ECB /* Whipcream.framework */; };
 		257F8AAB21F4DEE900B27ECB /* WhipcreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F8AAA21F4DEE900B27ECB /* WhipcreamTests.swift */; };
@@ -53,6 +54,7 @@
 		255A7174221C718A0073B47A /* MarginSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarginSeparator.swift; sourceTree = "<group>"; };
 		255B6037226DC6FD00D5BDD9 /* UIView+Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Configure.swift"; sourceTree = "<group>"; };
 		255B6039226DDD0300D5BDD9 /* Whipcream+Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Whipcream+Control.swift"; sourceTree = "<group>"; };
+		2561639E2276C3B000B5A7B3 /* MarginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarginView.swift; sourceTree = "<group>"; };
 		2576F7EC226CB72700E6FAB3 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		257F8A9C21F4DEE900B27ECB /* Whipcream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Whipcream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		257F8A9F21F4DEE900B27ECB /* Whipcream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Whipcream.h; sourceTree = "<group>"; };
@@ -133,6 +135,14 @@
 			path = Separators;
 			sourceTree = "<group>";
 		};
+		2561639D2276C3A200B5A7B3 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				2561639E2276C3B000B5A7B3 /* MarginView.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
 		2576F7EB226CB71400E6FAB3 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +172,7 @@
 		257F8A9E21F4DEE900B27ECB /* Whipcream */ = {
 			isa = PBXGroup;
 			children = (
+				2561639D2276C3A200B5A7B3 /* Layout */,
 				2576F7EB226CB71400E6FAB3 /* TableView */,
 				25C4669A226B63D200363A9E /* TabBar */,
 				25C46697226B295800363A9E /* NavigationBar */,
@@ -340,6 +351,7 @@
 				25C46699226B296E00363A9E /* NavigationBarController.swift in Sources */,
 				252DD9B121FDB35F00A8D958 /* Heading.swift in Sources */,
 				250AE78D21F5723600E158C7 /* Size.swift in Sources */,
+				2561639F2276C3B000B5A7B3 /* MarginView.swift in Sources */,
 				25C1D2E021F55C480068E13B /* UIColor+HexColor.swift in Sources */,
 				252DD9A821FCC0D200A8D958 /* View.swift in Sources */,
 				257F8AF121F4DFA400B27ECB /* Whipcream.swift in Sources */,

@@ -18,7 +18,6 @@ open class Heading: UILabel {
     
     public var color: UIColor = UIColor(hex: "333333")
     
-    
     private var fontTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Helvetica-Bold", size: 22)!]
     
     override public init(frame: CGRect) {

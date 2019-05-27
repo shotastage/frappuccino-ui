@@ -45,7 +45,7 @@ final class MarginListExampleViewController: UIViewController {
         let marginView = UIView()
         marginView.backgroundColor = .red
         marginView.frame.size.height = 20
-        marginView.frame.size.width = Margin.small
+        marginView.frame.size.width = 20
         
         self.view.addSubview(marginView)
         

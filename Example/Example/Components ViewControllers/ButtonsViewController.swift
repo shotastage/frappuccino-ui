@@ -45,12 +45,11 @@ final class ButtonsViewController: UIViewController {
         root.addSubview(defaultButton)
         
         
-        let basicButton1 = Button(text: "Basic Button")
-        basicButton1.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
-        basicButton1.setTitle("Basic Button", for: .normal)
-        basicButton1.setTitleColor(.red, for: .normal)
+        let basicButton1 = Button()
         basicButton1.configureLayout { (layout) in
             layout.isEnabled = true
+            layout.height = 60
+            layout.width = 130
             layout.top = 50
         }
         root.addSubview(basicButton1)

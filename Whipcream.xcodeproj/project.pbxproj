@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		250AE78D21F5723600E158C7 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AE78C21F5723600E158C7 /* Size.swift */; };
 		250AE78F21F587FD00E158C7 /* BasicButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AE78E21F587FD00E158C7 /* BasicButtons.swift */; };
+		2528F23722770BB90080BDB9 /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2528F23622770BB90080BDB9 /* Pipeline.swift */; };
 		252DD9A821FCC0D200A8D958 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DD9A721FCC0D200A8D958 /* View.swift */; };
 		252DD9AB21FCC0F200A8D958 /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DD9AA21FCC0F200A8D958 /* Stylesheet.swift */; };
 		252DD9AD21FCC12900A8D958 /* ComponentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DD9AC21FCC12900A8D958 /* ComponentSize.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		250AE78C21F5723600E158C7 /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		250AE78E21F587FD00E158C7 /* BasicButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicButtons.swift; sourceTree = "<group>"; };
+		2528F23622770BB90080BDB9 /* Pipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
 		252DD9A721FCC0D200A8D958 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		252DD9AA21FCC0F200A8D958 /* Stylesheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
 		252DD9AC21FCC12900A8D958 /* ComponentSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSize.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				257F8AA021F4DEE900B27ECB /* Info.plist */,
 				257F8AF021F4DFA400B27ECB /* Whipcream.swift */,
 				255B6039226DDD0300D5BDD9 /* Whipcream+Control.swift */,
+				2528F23622770BB90080BDB9 /* Pipeline.swift */,
 			);
 			path = Whipcream;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 257F8A9221F4DEE900B27ECB;
 			productRefGroup = 257F8A9D21F4DEE900B27ECB /* Products */;
@@ -358,6 +362,7 @@
 				252DD9B321FDB8A100A8D958 /* Text.swift in Sources */,
 				25C4669E226B6EFE00363A9E /* CircleButton.swift in Sources */,
 				255B6038226DC6FD00D5BDD9 /* UIView+Configure.swift in Sources */,
+				2528F23722770BB90080BDB9 /* Pipeline.swift in Sources */,
 				252DD9AB21FCC0F200A8D958 /* Stylesheet.swift in Sources */,
 				250AE78F21F587FD00E158C7 /* BasicButtons.swift in Sources */,
 				25C1D2E321F55C8A0068E13B /* UIView+Size.swift in Sources */,

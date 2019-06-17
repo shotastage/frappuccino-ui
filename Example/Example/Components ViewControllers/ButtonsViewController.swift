@@ -52,6 +52,7 @@ final class ButtonsViewController: UIViewController {
             layout.width = 130
             layout.top = 50
         }
+        basicButton1.setTitle("BASIC", for: .normal)
         root.addSubview(basicButton1)
         
         
@@ -62,6 +63,8 @@ final class ButtonsViewController: UIViewController {
         circleButton1.configureLayout { (layout) in
             layout.isEnabled = true
             layout.top = 80
+            layout.width = 60
+            layout.height = 60
         }
         root.addSubview(circleButton1)
         

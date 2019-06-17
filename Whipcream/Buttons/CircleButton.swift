@@ -11,7 +11,7 @@ import UIKit
 
 open class CircleButton: UIButton {
     
-    public var size: CGFloat = 55
+    public var size: CGFloat = 60
     
     public var boxShadow: OnOff = .off
     

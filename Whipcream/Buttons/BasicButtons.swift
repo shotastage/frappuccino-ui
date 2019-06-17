@@ -38,7 +38,6 @@ open class Button: UIButton {
         self.backgroundColor = UIColor(hex: "4286f4")
         
         updateLayout()
-
     }
     
   

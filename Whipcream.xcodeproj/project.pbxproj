@@ -14,13 +14,14 @@
 		252DD9AB21FCC0F200A8D958 /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DD9AA21FCC0F200A8D958 /* Stylesheet.swift */; };
 		252DD9AD21FCC12900A8D958 /* ComponentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DD9AC21FCC12900A8D958 /* ComponentSize.swift */; };
 		252DD9B121FDB35F00A8D958 /* Heading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DD9B021FDB35F00A8D958 /* Heading.swift */; };
-		252DD9B321FDB8A100A8D958 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DD9B221FDB8A100A8D958 /* Text.swift */; };
+		252DD9B321FDB8A100A8D958 /* NXTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DD9B221FDB8A100A8D958 /* NXTextView.swift */; };
 		255A7173221C71660073B47A /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255A7172221C71660073B47A /* SeparatorView.swift */; };
 		255A7175221C718A0073B47A /* MarginSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255A7174221C718A0073B47A /* MarginSeparator.swift */; };
 		255B6038226DC6FD00D5BDD9 /* UIView+Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255B6037226DC6FD00D5BDD9 /* UIView+Configure.swift */; };
 		255B603A226DDD0300D5BDD9 /* Whipcream+Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255B6039226DDD0300D5BDD9 /* Whipcream+Control.swift */; };
 		2561639F2276C3B000B5A7B3 /* Margin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2561639E2276C3B000B5A7B3 /* Margin.swift */; };
 		2576F7ED226CB72700E6FAB3 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2576F7EC226CB72700E6FAB3 /* TableView.swift */; };
+		25774C4722D4545F00FA1555 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25774C4622D4545F00FA1555 /* Text.swift */; };
 		257F8AA621F4DEE900B27ECB /* Whipcream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257F8A9C21F4DEE900B27ECB /* Whipcream.framework */; };
 		257F8AAB21F4DEE900B27ECB /* WhipcreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F8AAA21F4DEE900B27ECB /* WhipcreamTests.swift */; };
 		257F8AAD21F4DEE900B27ECB /* Whipcream.h in Headers */ = {isa = PBXBuildFile; fileRef = 257F8A9F21F4DEE900B27ECB /* Whipcream.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,13 +52,14 @@
 		252DD9AA21FCC0F200A8D958 /* Stylesheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
 		252DD9AC21FCC12900A8D958 /* ComponentSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSize.swift; sourceTree = "<group>"; };
 		252DD9B021FDB35F00A8D958 /* Heading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heading.swift; sourceTree = "<group>"; };
-		252DD9B221FDB8A100A8D958 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		252DD9B221FDB8A100A8D958 /* NXTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXTextView.swift; sourceTree = "<group>"; };
 		255A7172221C71660073B47A /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
 		255A7174221C718A0073B47A /* MarginSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarginSeparator.swift; sourceTree = "<group>"; };
 		255B6037226DC6FD00D5BDD9 /* UIView+Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Configure.swift"; sourceTree = "<group>"; };
 		255B6039226DDD0300D5BDD9 /* Whipcream+Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Whipcream+Control.swift"; sourceTree = "<group>"; };
 		2561639E2276C3B000B5A7B3 /* Margin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Margin.swift; sourceTree = "<group>"; };
 		2576F7EC226CB72700E6FAB3 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		25774C4622D4545F00FA1555 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		257F8A9C21F4DEE900B27ECB /* Whipcream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Whipcream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		257F8A9F21F4DEE900B27ECB /* Whipcream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Whipcream.h; sourceTree = "<group>"; };
 		257F8AA021F4DEE900B27ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,7 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				252DD9B021FDB35F00A8D958 /* Heading.swift */,
-				252DD9B221FDB8A100A8D958 /* Text.swift */,
+				252DD9B221FDB8A100A8D958 /* NXTextView.swift */,
+				25774C4622D4545F00FA1555 /* Text.swift */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -359,7 +362,7 @@
 				25C1D2E021F55C480068E13B /* UIColor+HexColor.swift in Sources */,
 				252DD9A821FCC0D200A8D958 /* View.swift in Sources */,
 				257F8AF121F4DFA400B27ECB /* Whipcream.swift in Sources */,
-				252DD9B321FDB8A100A8D958 /* Text.swift in Sources */,
+				252DD9B321FDB8A100A8D958 /* NXTextView.swift in Sources */,
 				25C4669E226B6EFE00363A9E /* CircleButton.swift in Sources */,
 				255B6038226DC6FD00D5BDD9 /* UIView+Configure.swift in Sources */,
 				2528F23722770BB90080BDB9 /* Pipeline.swift in Sources */,
@@ -367,6 +370,7 @@
 				250AE78F21F587FD00E158C7 /* BasicButtons.swift in Sources */,
 				25C1D2E321F55C8A0068E13B /* UIView+Size.swift in Sources */,
 				255A7175221C718A0073B47A /* MarginSeparator.swift in Sources */,
+				25774C4722D4545F00FA1555 /* Text.swift in Sources */,
 				255B603A226DDD0300D5BDD9 /* Whipcream+Control.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

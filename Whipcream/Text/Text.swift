@@ -53,17 +53,4 @@ open class Text: UILabel {
 
         super.drawText(in: newRect)
     }
-
-    public enum Headings: CGFloat {
-        case h1 = 35.0
-        case h2 = 28.0
-        case h3 = 23.0
-        case h4 = 18.0
-        case h5 = 15.0
-        case h6 = 12.0
-    }
-
-    public static func free(size: CGFloat) -> Headings {
-        return Headings(rawValue: size)!
-    }
 }

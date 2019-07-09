@@ -11,19 +11,19 @@ import UIKit
 
 
 open class Pipeline {
-    
+
     private init() {
         NSLog("THIS FEATURE IS NOW UNDER CONSTRUCTION")
     }
-    
+
     public static var shared: Pipeline {
         get {
             return Pipeline()
         }
-        
+
         set {
             self.shared = newValue
         }
     }
-    
+
 }

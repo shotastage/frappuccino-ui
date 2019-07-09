@@ -14,12 +14,12 @@ import AloeStackView
 
 
 final class ButtonsViewController: UIViewController {
-    
-    
+
+
     override func viewDidLoad() {
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationItem.title = "Buttons"
-        
+
         let root = self.view!
         root.backgroundColor = .white
         root.configureLayout { (layout) in
@@ -31,9 +31,9 @@ final class ButtonsViewController: UIViewController {
             layout.alignItems = .center
             layout.flexWrap = .noWrap
         }
-        
 
-        
+
+
         let defaultButton = UIButton()
         defaultButton.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
         defaultButton.setTitle("Default Button", for: .normal)
@@ -43,8 +43,8 @@ final class ButtonsViewController: UIViewController {
             layout.top = 20
         }
         root.addSubview(defaultButton)
-        
-        
+
+
         let basicButton1 = Button()
         basicButton1.configureLayout { (layout) in
             layout.isEnabled = true
@@ -54,9 +54,9 @@ final class ButtonsViewController: UIViewController {
         }
         basicButton1.setTitle("BASIC", for: .normal)
         root.addSubview(basicButton1)
-        
-        
-        
+
+
+
         let circleButton1 = CircleButton()
         circleButton1.size = 80
         circleButton1.backgroundColor = .red
@@ -67,7 +67,7 @@ final class ButtonsViewController: UIViewController {
             layout.height = 60
         }
         root.addSubview(circleButton1)
-        
+
         self.view.yoga.applyLayout(preservingOrigin: true)
 
     }

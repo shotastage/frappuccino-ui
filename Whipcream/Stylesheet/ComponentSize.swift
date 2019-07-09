@@ -11,7 +11,7 @@ import UIKit
 
 
 extension Stylesheet {
-    
+
     public func frameSize() -> CGRect {
         return CGRect(x: 0, y: 0, width: self.width, height: self.height)
     }

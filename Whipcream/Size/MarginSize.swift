@@ -10,6 +10,6 @@ import Foundation
 
 
 public struct MarginSize {
-    
+
     public static let small: CGFloat = 10
 }

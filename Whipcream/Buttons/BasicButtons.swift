@@ -11,23 +11,23 @@ import UIKit
 
 
 open class Button: UIButton {
-    
+
     public var textColor: UIColor = UIColor(hex: "ffffff")
-    
+
     public var cornerRadius: CGFloat = 15 {
         didSet {
             self.setNeedsLayout()
         }
     }
-    
+
     public var width: CGFloat = 150 {
         didSet {
             updateLayout()
         }
     }
-    
-    
-    
+
+
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.layer.cornerRadius = cornerRadius
@@ -36,11 +36,11 @@ open class Button: UIButton {
         self.tintColor = self.textColor
         self.setTitleColor(textColor, for: .normal)
         self.backgroundColor = UIColor(hex: "4286f4")
-        
+
         updateLayout()
     }
-    
-  
+
+
     override open func layoutSubviews() {
         super.layoutSubviews()
         titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
@@ -53,7 +53,7 @@ open class Button: UIButton {
         self.frame.size.width = width
 
     }
-    
+
     private func updateLayout() {
         setNeedsLayout()
         layoutIfNeeded()

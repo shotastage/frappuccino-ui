@@ -10,17 +10,17 @@ import UIKit
 
 
 public struct Size {
-    
+
     public static let width: CGFloat = UIScreen.main.bounds.size.width
-    
+
     public static let height: CGFloat = UIScreen.main.bounds.size.height
-    
+
     public static let statusbarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
-    
+
 
     @available(iOS 11.0, *)
     public struct Safearea {
-        
+
         public static var available: Bool {
             get {
                 if Safearea.bottom != 0 {
@@ -30,15 +30,15 @@ public struct Size {
                 }
             }
         }
-        
-        
+
+
         public static var top: CGFloat {
             get {
                 let window = UIApplication.shared.keyWindow
                 return window?.safeAreaInsets.top ?? 0.0
             }
         }
-        
+
         public static var bottom: CGFloat {
             get {
                 let window = UIApplication.shared.keyWindow

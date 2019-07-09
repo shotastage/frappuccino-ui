@@ -12,7 +12,7 @@ import Foundation
 public enum OnOff {
     case on
     case off
-    
+
     var boolean: Bool {
         switch self {
         case .on:

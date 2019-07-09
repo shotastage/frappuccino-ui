@@ -10,15 +10,15 @@ import UIKit
 
 
 open class Margin {
-    
+
     public var top: CGFloat
-    
+
     public var bottom: CGFloat
-    
+
     public var right: CGFloat
-    
+
     public var left: CGFloat
-    
+
     public init(top: CGFloat = 0, bottom: CGFloat = 0, right: CGFloat = 0, left: CGFloat = 0) {
         self.top = top
         self.bottom = bottom

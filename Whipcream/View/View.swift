@@ -9,16 +9,16 @@
 import UIKit
 
 open class View: UIView {
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
-    
-    
+
+
     public convenience init(style: Stylesheet) {
         self.init(frame: CGRect())
     }
-    
+
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -26,5 +26,5 @@ open class View: UIView {
 
 
 open class RoundView: View {
-    
+
 }

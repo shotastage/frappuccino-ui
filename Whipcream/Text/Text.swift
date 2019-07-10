@@ -13,7 +13,6 @@ import UIKit
 open class Text: UILabel {
 
     /// Font propertoes
-    public var fontName: String = "Helvetica-Bold"
 
     public var fontSize: CGFloat = 22.0
 
@@ -22,23 +21,16 @@ open class Text: UILabel {
     /// Layout properties
     public var margin: Margin = Margin()
 
-
-    private var fontTextAttributes: [NSAttributedString.Key: UIFont] {
-        get {
-            return [NSAttributedString.Key.font: UIFont(name: self.fontName, size: self.fontSize)!]
-        }
-    }
-
     override public init(frame: CGRect) {
         super.init(frame: frame)
     }
 
-    public convenience init(text: String, size: CGFloat) {
+    public convenience init(text: String, size: CGFloat, font: String = "Helvetica-Bold") {
         self.init()
 
         self.text = text
         self.numberOfLines = 1
-        self.font = UIFont(name: fontName, size: size)
+        self.font = UIFont(name: font, size: size)
         self.frame.size.width = Size.width - MarginSize.small
         self.textAlignment = .left
         self.textColor = self.color

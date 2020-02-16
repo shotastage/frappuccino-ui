@@ -20,3 +20,10 @@ targets:
         INFOPLIST_FILE: WhipcreamTests/Info.plist
     dependencies:
       - target: Whipcream
+  Example:
+    type: application
+    platform: iOS
+    sources:
+        - Example/Example
+    dependencies:
+        - target: Whipcream

@@ -1,13 +1,13 @@
 //
-//  FrappuccinoTests.swift
-//  FrappuccinoTests
+//  WhipcreamTests.swift
+//  WhipcreamTests
 //
 //  Created by Shota Shimazu on 2019/01/21.
 //  Copyright © 2019 Shota Shimazu. All rights reserved.
 //
 
 import XCTest
-@testable import Frappuccino
+@testable import Whipcream
 
 class WhipcreamTests: XCTestCase {
 

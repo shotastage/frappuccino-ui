@@ -65,9 +65,8 @@ extension UtilViewController {
                 forRow: label,
                 handler: { label in
                     handler!()
-            }
+                }
             )
-
             label.isUserInteractionEnabled = true
         }
     }

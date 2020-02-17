@@ -6,18 +6,4 @@ target 'Example' do
   use_frameworks!
   pod 'AloeStackView'
   pod 'YogaKit', '~> 1.14'
-
-
-  # Pods for Example
-
-  target 'ExampleTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'ExampleUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end

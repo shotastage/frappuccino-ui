@@ -25,11 +25,11 @@ open class Text: UILabel {
         super.init(frame: frame)
     }
 
-    public convenience init(text: String, size: CGFloat, font: String = "Helvetica-Bold") {
+    public convenience init(text: String, size: CGFloat = 12.0, font: String = "Helvetica-Bold", line: Int = 1) {
         self.init()
 
         self.text = text
-        self.numberOfLines = 1
+        self.numberOfLines = line
         self.font = UIFont(name: font, size: size)
         self.frame.size.width = Size.width - MarginSize.small
         self.textAlignment = .left

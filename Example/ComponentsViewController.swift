@@ -54,6 +54,10 @@ final class ComponentsViewController: UIViewController {
         registerMenu(title: "Separators", handler: {
             self.toSeparators()
         })
+        
+        registerMenu(title: "Text", handler: {
+            self.toText()
+        })
 
 
         root.yoga.applyLayout(preservingOrigin: true)
@@ -105,6 +109,11 @@ extension ComponentsViewController {
 
     func toSeparators() {
         let next: UIViewController = SeparatorsViewController()
+        self.show(next, sender: nil)
+    }
+    
+    func toText() {
+        let next: UIViewController = TextViewController()
         self.show(next, sender: nil)
     }
 }

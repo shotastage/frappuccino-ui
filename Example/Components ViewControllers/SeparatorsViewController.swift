@@ -31,14 +31,11 @@ final class SeparatorsViewController: UIViewController {
         }
 
 
-
-
-
         let marginView: MarginSeparator = MarginSeparator()
         marginView.configureLayout { (layout) in
             layout.isEnabled = true
             layout.width = YGValue(Size.width)
-            layout.height = 100
+            layout.height = 90
         }
         root.addSubview(marginView)
 

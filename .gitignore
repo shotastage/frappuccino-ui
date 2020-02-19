@@ -23,5 +23,4 @@ Pods/
 *.swp
 !.gitkeep
 .DS_Store
-Whipcream.xcodeproj/
 Whipcream.xcworkspace/

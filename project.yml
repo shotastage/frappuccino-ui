@@ -1,5 +1,6 @@
 name: Whipcream
-
+attributes:
+  ORGANIZATIONNAME: "Shota Shimazu"
 options:
   bundleIdPrefix: com.shotastage
   deploymentTarget:

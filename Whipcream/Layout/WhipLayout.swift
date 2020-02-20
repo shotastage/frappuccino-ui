@@ -24,18 +24,27 @@ open class WhipLayout {
         return WhipLayout.absoluteHeight - (marginTop + marginBottom)
     }
 
-    public static func layout(top: CGFloat = 0.0,
+    public static func position(view: UIView, top: CGFloat = 0.0, bottom: CGFloat = 0.0,
+                                right: CGFloat = 0.0, left: CGFloat = 0.0) -> CGPoint {
+        
+        return CGPoint(
+            x: (absoluteWidth - view.frame.width) / 2,
+            y: (absoluteHeight - view.frame.height - bottom)
+        )
+    }
+    
+    public static func auto(top: CGFloat = 0.0,
                               bottom: CGFloat = 0.0, right: CGFloat = 0.0, left: CGFloat = 0.0) -> CGRect {
         
         let calcWidth = WhipLayout.absoluteWidth - (right + left)
         
         let calcHeight = WhipLayout.absoluteHeight - (top + bottom)
         
-        
         return CGRect(
             x: (WhipLayout.absoluteWidth - calcWidth) / 2,
             y: (WhipLayout.absoluteHeight - calcHeight - bottom),
             width: calcWidth,
-            height: calcHeight)
+            height: calcHeight
+        )
     }
 }

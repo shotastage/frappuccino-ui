@@ -19,12 +19,12 @@ final class WhipLayoutViewController: UIViewController {
     private let stackView = AloeStackView()
 
     override func viewDidLoad() {
-        self.navigationItem.title = "Size Classes"
+        self.navigationItem.title = "WhipLayout Engine"
 
 
         let layoutRectangle = UIView()
         layoutRectangle.backgroundColor = .red
-        layoutRectangle.frame = WhipLayout.layout(top: 300, bottom: 200, right: 30, left: 30)
+        layoutRectangle.frame = WhipLayout.auto(top: 300, bottom: 200, right: 30, left: 30)
         self.view.addSubview(layoutRectangle)
     }
 }

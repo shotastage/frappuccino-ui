@@ -24,12 +24,14 @@ open class WhipLayout {
         return WhipLayout.absoluteHeight - (marginTop + marginBottom)
     }
 
-    public static func position(view: UIView, top: CGFloat = 0.0, bottom: CGFloat = 0.0,
-                                right: CGFloat = 0.0, left: CGFloat = 0.0) -> CGPoint {
+    public static func position(size: CGSize, top: CGFloat = 0.0, bottom: CGFloat = 0.0,
+                                right: CGFloat = 0.0, left: CGFloat = 0.0) -> CGRect {
         
-        return CGPoint(
-            x: (absoluteWidth - view.frame.width) / 2,
-            y: (absoluteHeight - view.frame.height - bottom)
+        return CGRect(
+            x: (absoluteWidth - size.width) / 2,
+            y: (absoluteHeight - size.height - bottom),
+            width: size.width,
+            height: size.height
         )
     }
     

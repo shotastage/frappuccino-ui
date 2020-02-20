@@ -25,6 +25,6 @@ targets:
     type: application
     platform: iOS
     sources:
-        - Example
+      - Example
     dependencies:
-        - target: Whipcream
+      - target: Whipcream

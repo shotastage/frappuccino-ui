@@ -24,7 +24,7 @@ open class WhipLayout {
         return WhipLayout.absoluteHeight - (marginTop + marginBottom)
     }
 
-    public static func position(size: CGSize, top: CGFloat = 0.0, bottom: CGFloat = 0.0,
+    public static func position(_ parentView: UIView, size: CGSize, top: CGFloat = 0.0, bottom: CGFloat = 0.0,
                                 right: CGFloat = 0.0, left: CGFloat = 0.0) -> CGRect {
         
         return CGRect(

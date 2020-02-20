@@ -46,7 +46,10 @@ final class UtilViewController: UIViewController {
         registerMenu(title: "Margins", handler: {
             self.toMarginClass()
         })
-
+        
+        registerMenu(title: "WhipLayout", handler: {
+            self.toWhipLayout()
+        })
 
         root.yoga.applyLayout(preservingOrigin: true)
     }
@@ -83,6 +86,12 @@ extension UtilViewController {
 
     func toMarginClass() {
         let next: UIViewController = MarginListExampleViewController()
+
+        self.show(next, sender: nil)
+    }
+    
+    func toWhipLayout() {
+        let next: UIViewController = WhipLayoutViewController()
 
         self.show(next, sender: nil)
     }

@@ -14,6 +14,10 @@ public struct Size {
     public static let width: CGFloat = UIScreen.main.bounds.size.width
 
     public static let height: CGFloat = UIScreen.main.bounds.size.height
+    
+    public static let halfWidth: CGFloat = Size.width / 2
+    
+    public static let halfHeight: CGFloat = Size.height / 2
 
     public static let statusbarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
 

@@ -21,7 +21,14 @@ public struct Size {
 
     public static let statusbarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
 
-
+    public static func widthFitToScreen(ratio: Double) -> CGFloat {
+        return 0.1
+    }
+    
+    public static func heightFitToScreen(ratio: Double) -> CGFloat {
+        return 0.1
+    }
+    
     @available(iOS 11.0, *)
     public struct Safearea {
 

@@ -20,11 +20,19 @@ final class WhipLayoutViewController: UIViewController {
 
     override func viewDidLoad() {
         self.navigationItem.title = "WhipLayout Engine"
+        
+        let redRectangle = UIView()
+        let blueRectangle = UIView()
 
-
-        let layoutRectangle = UIView()
-        layoutRectangle.backgroundColor = .red
-        layoutRectangle.frame = WhipLayout.auto(top: 300, bottom: 200, right: 30, left: 30)
-        self.view.addSubview(layoutRectangle)
+        WhipLayoutNX(root: self.view)
+            .add(redRectangle) { view in
+                view.backgroundColor = .red
+                view.frame = CGRect(x: 0, y: 200, width: 100, height: 100)
+            }
+            .add(blueRectangle) { view in
+                view.backgroundColor = .blue
+                view.frame = CGRect(x: 0, y: 400, width: 100, height: 100)
+            }
+            .apply()
     }
 }

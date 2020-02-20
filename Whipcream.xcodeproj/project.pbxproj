@@ -323,6 +323,7 @@
 		9928352F4F37635A615327DF /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				F844B16E851D2E463A721E75 /* Size.swift */,
 				04F877B9F71956F7415BE004 /* WhipLayout.swift */,
 				6528A092073F3FF72D78DB96 /* Margin.swift */,
 			);
@@ -374,7 +375,6 @@
 			isa = PBXGroup;
 			children = (
 				654688EA674BAE39E2D205E1 /* MarginSize.swift */,
-				F844B16E851D2E463A721E75 /* Size.swift */,
 			);
 			path = Size;
 			sourceTree = "<group>";

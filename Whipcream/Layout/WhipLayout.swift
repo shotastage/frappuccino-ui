@@ -10,6 +10,43 @@ import UIKit
 
 
 
+
+open class WhipLayoutNX {
+
+    let root: UIView?
+    
+    var views: [UIView]?
+    
+    public init(root: UIView) {
+        self.root = root
+        self.views?.append(UIView(frame: .zero))
+
+    }
+    
+    public func add(_ view: UIView, _ f: @escaping (UIView) -> Void) -> WhipLayoutNX {
+        f(view)
+        self.root?.addSubview(view)
+        return self
+    }
+    
+    public func apply() {
+        // self.root?.addSubview((self.views?[0])!)
+        /*
+        for view in views! {
+            self.root?.addSubview(view)
+        }
+        */
+    }
+}
+
+
+protocol WhipLayoutCalc {
+    
+}
+
+
+
+
 open class WhipLayout {
     
     public static let absoluteWidth: CGFloat = UIScreen.main.bounds.size.width

@@ -11,6 +11,9 @@ targets:
     platform: iOS
     sources:
       - Whipcream
+    settings:
+      base:
+        INFOPLIST_FILE: Whipcream/Info.plist
   WhipcreamTests:
     type: bundle.unit-test
     platform: iOS

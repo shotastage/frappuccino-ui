@@ -28,8 +28,8 @@ open class WhipLayout {
                                 right: CGFloat = 0.0, left: CGFloat = 0.0) -> CGRect {
         
         return CGRect(
-            x: (absoluteWidth - size.width) / 2,
-            y: (absoluteHeight - size.height - bottom),
+            x: (parentView.bounds.width - size.width) / 2,
+            y: (parentView.bounds.height - size.height - bottom),
             width: size.width,
             height: size.height
         )

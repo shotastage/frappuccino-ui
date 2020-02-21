@@ -11,9 +11,9 @@ import UIKit
 
 public struct Size {
 
-    public static let width: CGFloat = UIScreen.main.bounds.size.width
+    public static let width: CGFloat = UIApplication.shared.keyWindow?.bounds.size.width ?? 0
 
-    public static let height: CGFloat = UIScreen.main.bounds.size.height
+    public static let height: CGFloat = UIApplication.shared.keyWindow?.bounds.size.height ?? 0
     
     public static let halfWidth: CGFloat = Size.width / 2
     

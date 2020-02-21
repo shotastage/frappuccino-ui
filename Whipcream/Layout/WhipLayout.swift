@@ -56,13 +56,14 @@ open class WLayoutStack {
         return (root?.bounds.height ?? 0) - (marginTop + marginBottom)
     }
 
+    @discardableResult
     public func style(_ stylingTo: UIView, _ f: @escaping (UIView) -> Void = {_ in}) -> WLayoutStack {
         return self
     }
  
-    public func position(_ stylingTo: UIView,
-                            size: CGSize, top: CGFloat = 0.0, bottom: CGFloat = 0.0, right: CGFloat = 0.0, left: CGFloat = 0.0,
-                            _ f: @escaping (UIView) -> Void = {_ in}) -> WLayoutStack {
+    @discardableResult
+    public func position(_ stylingTo: UIView, size: CGSize, top: CGFloat = 0.0, bottom: CGFloat = 0.0,
+                         right: CGFloat = 0.0, left: CGFloat = 0.0, _ f: @escaping (UIView) -> Void = {_ in}) -> WLayoutStack {
         stylingTo.frame = CGRect(
             x: ((root?.frame.width ?? 0) - size.width) / 2,
             y: ((root?.frame.height ?? 0) - size.height - bottom),
@@ -73,9 +74,9 @@ open class WLayoutStack {
         return self
     }
 
-    public func auto(_ stylingTo: UIView,
-                            top: CGFloat = 0.0, bottom: CGFloat = 0.0, right: CGFloat = 0.0, left: CGFloat = 0.0,
-                            _ f: @escaping (UIView) -> Void = {_ in}) -> WLayoutStack {
+    @discardableResult
+    public func auto(_ stylingTo: UIView, top: CGFloat = 0.0, bottom: CGFloat = 0.0,
+                     right: CGFloat = 0.0, left: CGFloat = 0.0, _ f: @escaping (UIView) -> Void = {_ in}) -> WLayoutStack {
 
         let calcWidth = (root?.bounds.width ?? 0) - (right + left)
 

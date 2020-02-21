@@ -40,9 +40,15 @@ open class WLayoutStack {
 
     // Danger Absolute Sizes
     // This
-    public static let dangerousAbsoluteScreenWidth: CGFloat = UIScreen.main.bounds.size.width
+    public static var dangerousAbsoluteScreenWidth: CGFloat {
+        print("[Whipcream Layout Engine] ", "Use dangerousAbsoluteScreenWidth is might be collapsed layout.")
+        return UIScreen.main.bounds.size.width
+    }
 
-    public static let dangerousAbsoluteScreenHeight: CGFloat = UIScreen.main.bounds.size.height
+    public static var dangerousAbsoluteScreenHeight: CGFloat {
+        print("[Whipcream Layout Engine] ", "Use dangerousAbsoluteScreenHeight is might be collapsed layout.")
+        return UIScreen.main.bounds.size.height
+    }
     
     public init(root: UIView) {
         self.root = root
@@ -76,7 +82,7 @@ open class WLayoutStack {
  
     @discardableResult
     public func position(_ stylingTo: UIView, size: CGSize, top: CGFloat = 0.0, bottom: CGFloat = 0.0,
-                         right: CGFloat = 0.0, left: CGFloat = 0.0, _ f: @escaping (UIView) -> Void = {_ in}) -> WLayoutStack {
+                         right: CGFloat = 0.0, left: CGFloat = 0.0) -> WLayoutStack {
         stylingTo.frame = CGRect(
             x: ((root?.frame.width ?? 0) - size.width) / 2,
             y: ((root?.frame.height ?? 0) - size.height - bottom),
@@ -89,7 +95,7 @@ open class WLayoutStack {
 
     @discardableResult
     public func auto(_ stylingTo: UIView, top: CGFloat = 0.0, bottom: CGFloat = 0.0,
-                     right: CGFloat = 0.0, left: CGFloat = 0.0, _ f: @escaping (UIView) -> Void = {_ in}) -> WLayoutStack {
+                     right: CGFloat = 0.0, left: CGFloat = 0.0) -> WLayoutStack {
 
         let calcWidth = (root?.bounds.width ?? 0) - (right + left)
 
@@ -97,8 +103,8 @@ open class WLayoutStack {
 
     
         stylingTo.frame = CGRect(
-            x: (WLayoutStack.dangerousAbsoluteScreenWidth - calcWidth) / 2,
-            y: (WLayoutStack.dangerousAbsoluteScreenHeight - calcHeight - bottom),
+            x: (stylingTo.frame.width - calcWidth) / 2,
+            y: (stylingTo.frame.height - calcHeight - bottom),
             width: calcWidth,
             height: calcHeight
         )

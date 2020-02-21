@@ -11,7 +11,7 @@ import UIKit
 
 
 
-open class WhipLayoutNX {
+open class WLViewStack {
 
     let root: UIView?
     
@@ -23,19 +23,11 @@ open class WhipLayoutNX {
 
     }
     
-    public func add(_ view: UIView, _ f: @escaping (UIView) -> Void) -> WhipLayoutNX {
+    @discardableResult
+    public func add(_ view: UIView, _ f: @escaping (UIView) -> Void = {_ in }) -> WLViewStack {
         f(view)
         self.root?.addSubview(view)
         return self
-    }
-    
-    public func apply() {
-        // self.root?.addSubview((self.views?[0])!)
-        /*
-        for view in views! {
-            self.root?.addSubview(view)
-        }
-        */
     }
 }
 

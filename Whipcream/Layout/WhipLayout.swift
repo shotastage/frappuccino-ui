@@ -56,6 +56,10 @@ open class WLayoutStack {
         return (root?.bounds.height ?? 0) - (marginTop + marginBottom)
     }
 
+    public func style(_ stylingTo: UIView, _ f: @escaping (UIView) -> Void = {_ in}) -> WLayoutStack {
+        return self
+    }
+ 
     public func position(_ stylingTo: UIView,
                             size: CGSize, top: CGFloat = 0.0, bottom: CGFloat = 0.0, right: CGFloat = 0.0, left: CGFloat = 0.0,
                             _ f: @escaping (UIView) -> Void = {_ in}) -> WLayoutStack {

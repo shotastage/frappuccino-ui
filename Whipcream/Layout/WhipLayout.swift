@@ -32,25 +32,25 @@ open class WLViewStack {
 }
 
 
-protocol WhipLayoutCalc {
+open class WLayoutStack {
     
-}
-
-
-
-
-open class WhipLayout {
+    let root: UIView?
     
-    public static let absoluteWidth: CGFloat = UIScreen.main.bounds.size.width
+    // Danger
+    public static let dangerousAbsoluteScreenWidth: CGFloat = UIScreen.main.bounds.size.width
 
-    public static let absoluteHeight: CGFloat = UIScreen.main.bounds.size.height
-
-    public static func width(marginRight: CGFloat = 0.0, marginLeft: CGFloat = 0.0) -> CGFloat {
-        return WhipLayout.absoluteWidth - (marginRight + marginLeft)
+    public static let dangerousAbsoluteScreenHeight: CGFloat = UIScreen.main.bounds.size.height
+    
+    public init(root: UIView) {
+        self.root = root
     }
 
-    public static func height(marginTop: CGFloat = 0.0, marginBottom: CGFloat = 0.0) -> CGFloat {
-        return WhipLayout.absoluteHeight - (marginTop + marginBottom)
+    public func width(marginRight: CGFloat = 0.0, marginLeft: CGFloat = 0.0) -> CGFloat {
+        return (root?.bounds.width ?? 0) - (marginRight + marginLeft)
+    }
+
+    public func height(marginTop: CGFloat = 0.0, marginBottom: CGFloat = 0.0) -> CGFloat {
+        return (root?.bounds.height ?? 0) - (marginTop + marginBottom)
     }
 
     public static func position(_ parentView: UIView, size: CGSize, top: CGFloat = 0.0, bottom: CGFloat = 0.0,
@@ -63,17 +63,70 @@ open class WhipLayout {
             height: size.height
         )
     }
-    
+
     public static func auto(top: CGFloat = 0.0,
                               bottom: CGFloat = 0.0, right: CGFloat = 0.0, left: CGFloat = 0.0) -> CGRect {
         
-        let calcWidth = WhipLayout.absoluteWidth - (right + left)
+        let calcWidth = WLayoutStack.dangerousAbsoluteScreenWidth - (right + left)
         
-        let calcHeight = WhipLayout.absoluteHeight - (top + bottom)
+        let calcHeight = WLayoutStack.dangerousAbsoluteScreenHeight - (top + bottom)
         
         return CGRect(
-            x: (WhipLayout.absoluteWidth - calcWidth) / 2,
-            y: (WhipLayout.absoluteHeight - calcHeight - bottom),
+            x: (WLayoutStack.dangerousAbsoluteScreenWidth - calcWidth) / 2,
+            y: (WLayoutStack.dangerousAbsoluteScreenHeight - calcHeight - bottom),
+            width: calcWidth,
+            height: calcHeight
+        )
+    }
+
+    @discardableResult
+    func add() -> WLayoutStack {
+        return self
+    }
+}
+
+
+
+
+open class WhipLayout {
+    
+    @available(*, deprecated, renamed: "WLayoutStack.dangerousAbsoluteScreenWidth")
+    public static let absoluteWidth: CGFloat = UIScreen.main.bounds.size.width
+
+    @available(*, deprecated, renamed: "WLayoutStack.dangerousAbsoluteScreenHeight")
+    public static let absoluteHeight: CGFloat = UIScreen.main.bounds.size.height
+
+    public static func width(marginRight: CGFloat = 0.0, marginLeft: CGFloat = 0.0) -> CGFloat {
+        return WLayoutStack.dangerousAbsoluteScreenWidth - (marginRight + marginLeft)
+    }
+
+    public static func height(marginTop: CGFloat = 0.0, marginBottom: CGFloat = 0.0) -> CGFloat {
+        return WLayoutStack.dangerousAbsoluteScreenHeight - (marginTop + marginBottom)
+    }
+
+    @available(*, deprecated, renamed: "WLayoutStack.position")
+    public static func position(_ parentView: UIView, size: CGSize, top: CGFloat = 0.0, bottom: CGFloat = 0.0,
+                                right: CGFloat = 0.0, left: CGFloat = 0.0) -> CGRect {
+        
+        return CGRect(
+            x: (parentView.frame.width - size.width) / 2,
+            y: (parentView.frame.height - size.height - bottom),
+            width: size.width,
+            height: size.height
+        )
+    }
+    
+    @available(*, deprecated, renamed: "WLayoutStack.auto")
+    public static func auto(top: CGFloat = 0.0,
+                              bottom: CGFloat = 0.0, right: CGFloat = 0.0, left: CGFloat = 0.0) -> CGRect {
+        
+        let calcWidth = WLayoutStack.dangerousAbsoluteScreenWidth - (right + left)
+        
+        let calcHeight = WLayoutStack.dangerousAbsoluteScreenHeight - (top + bottom)
+        
+        return CGRect(
+            x: (WLayoutStack.dangerousAbsoluteScreenWidth - calcWidth) / 2,
+            y: (WLayoutStack.dangerousAbsoluteScreenHeight - calcHeight - bottom),
             width: calcWidth,
             height: calcHeight
         )

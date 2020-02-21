@@ -55,15 +55,22 @@ open class WLayoutStack {
     public func height(marginTop: CGFloat = 0.0, marginBottom: CGFloat = 0.0) -> CGFloat {
         return (root?.bounds.height ?? 0) - (marginTop + marginBottom)
     }
-
-    @discardableResult
-    public func style(_ stylingTo: UIView, _ f: @escaping (UIView) -> Void = {_ in}) -> WLayoutStack {
-        return self
-    }
     
     @discardableResult
     public func frame(_ stylingTo: UIView, x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat) -> WLayoutStack {
         stylingTo.frame = CGRect(x: x, y: y, width: width, height: height)
+        return self
+    }
+    
+    @discardableResult
+    public func point(_ stylingTo: UIView, x: CGFloat, y: CGFloat) -> WLayoutStack {
+        stylingTo.frame.origin = CGPoint(x: x, y: y)
+        return self
+    }
+
+    @discardableResult
+    public func size(_ stylingTo: UIView, width: CGFloat, height: CGFloat) -> WLayoutStack {
+        stylingTo.frame.size = CGSize(width: width, height: height)
         return self
     }
  

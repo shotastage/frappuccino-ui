@@ -60,6 +60,12 @@ open class WLayoutStack {
     public func style(_ stylingTo: UIView, _ f: @escaping (UIView) -> Void = {_ in}) -> WLayoutStack {
         return self
     }
+    
+    @discardableResult
+    public func frame(_ stylingTo: UIView, x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat) -> WLayoutStack {
+        stylingTo.frame = CGRect(x: x, y: y, width: width, height: height)
+        return self
+    }
  
     @discardableResult
     public func position(_ stylingTo: UIView, size: CGSize, top: CGFloat = 0.0, bottom: CGFloat = 0.0,

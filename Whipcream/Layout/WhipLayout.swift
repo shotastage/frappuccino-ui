@@ -146,8 +146,8 @@ open class WLayoutStack {
     }
 
     @discardableResult
-    func add() -> WLayoutStack {
-        return self
+    func stack(_ applyTo: UIView, _ f: @escaping (WLayoutStack) -> WLayoutStack) -> WLayoutStack {
+        return f(self)
     }
 }
 

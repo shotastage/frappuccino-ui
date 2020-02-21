@@ -123,7 +123,7 @@ open class WLayoutStack {
             x: ((root?.bounds.width ?? 0) - calcWidth) / 2,
             y: ((root?.bounds.height ?? 0) - calcHeight),
             width: calcWidth,
-            height: calcHeight
+            height: height
         )
     
         return self
@@ -138,7 +138,7 @@ open class WLayoutStack {
         stylingTo.frame = CGRect(
             x: ((root?.bounds.width ?? 0) - calcWidth) / 2,
             y: ((root?.bounds.height ?? 0) - calcHeight),
-            width: calcWidth,
+            width: width,
             height: calcHeight
         )
 

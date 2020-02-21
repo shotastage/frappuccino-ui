@@ -111,6 +111,39 @@ open class WLayoutStack {
 
         return self
     }
+    
+    @discardableResult
+    public func fixHeight(_ stylingTo: UIView, right: CGFloat = 0.0, left: CGFloat = 0.0, height: CGFloat) -> WLayoutStack {
+        
+        let calcWidth = (root?.bounds.width ?? 0) - (right + left)
+
+        let calcHeight = (root?.bounds.height ?? 0) - height
+
+        stylingTo.frame = CGRect(
+            x: ((root?.bounds.width ?? 0) - calcWidth) / 2,
+            y: ((root?.bounds.height ?? 0) - calcHeight),
+            width: calcWidth,
+            height: calcHeight
+        )
+    
+        return self
+    }
+    
+    @discardableResult
+    public func fixWidth(_ stylingTo: UIView, top: CGFloat = 0.0, bottom: CGFloat = 0.0, width: CGFloat) -> WLayoutStack {
+        let calcWidth = (root?.bounds.width ?? 0) - width
+
+        let calcHeight = (root?.bounds.height ?? 0) - (top + bottom)
+
+        stylingTo.frame = CGRect(
+            x: ((root?.bounds.width ?? 0) - calcWidth) / 2,
+            y: ((root?.bounds.height ?? 0) - calcHeight),
+            width: calcWidth,
+            height: calcHeight
+        )
+
+        return self
+    }
 
     @discardableResult
     func add() -> WLayoutStack {

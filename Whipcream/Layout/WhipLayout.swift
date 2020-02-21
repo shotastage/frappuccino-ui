@@ -103,8 +103,8 @@ open class WLayoutStack {
 
     
         stylingTo.frame = CGRect(
-            x: (stylingTo.frame.width - calcWidth) / 2,
-            y: (stylingTo.frame.height - calcHeight - bottom),
+            x: ((root?.bounds.width ?? 0) - calcWidth) / 2,
+            y: ((root?.bounds.height ?? 0) - calcHeight - bottom),
             width: calcWidth,
             height: calcHeight
         )

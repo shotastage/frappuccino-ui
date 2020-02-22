@@ -53,6 +53,11 @@ open class WhipViewStack {
 }
 
 
+/**
+**WhipLayoutStack** is DSL class for stacking layout related codes.
+ 
+- Usage:   `WhipLayoutStack(root: [ROOT UIView instance])`
+*/
 open class WhipLayoutStack {
 
     let root: UIView?

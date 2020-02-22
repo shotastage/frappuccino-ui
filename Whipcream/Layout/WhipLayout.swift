@@ -8,25 +8,42 @@
 
 import UIKit
 
+/**
+WLViewStack has been renamed to `WhipViewStack`.
+*/
 @available(*, deprecated, renamed: "WhipViewStack")
 open class WLViewStack { }
 
-
+/**
+WLayoutStack has been renamed to `WhipLayoutStack`.
+*/
 @available(*, deprecated, renamed: "WhipLayoutStack")
 open class WLayoutStack { }
 
-
+/**
+**WhipViewStack** is class for stacking and composing UI structure visually better syntax.
+ 
+- Usage:   `WhipViewStack(root: [ROOT UIView instance])`
+*/
 open class WhipViewStack {
 
-    let root: UIView?
+    private let root: UIView?
     
-    var views: [UIView]?
+    private var views: [UIView]?
 
+    /// :nodoc:
     public init(root: UIView) {
         self.root = root
         self.views?.append(UIView(frame: .zero))
     }
 
+    /**
+     Add a new UIView or inherited class instance as a WhipLayout view stack.
+     It automatically run `addSubview` internally.
+    - parameter view: Add target UIView
+    - parameter f:  Closure that inherite first param view instance.
+    - returns: WhipViewStack instance to sequentially method.
+    */
     @discardableResult
     public func add(_ view: UIView, _ f: @escaping (UIView) -> Void = {_ in }) -> WhipViewStack {
         f(view)

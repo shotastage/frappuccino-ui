@@ -10,6 +10,6 @@ import UIKit
 import WebKit
 
 
-open class WCInternalWebBrowserController: UIViewController {
+open class WhipBrowserController: UIViewController {
     
 }

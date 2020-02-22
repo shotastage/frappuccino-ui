@@ -40,7 +40,7 @@
 		CC29DE07CF15367367E95A98 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1B4685353066207A95333 /* TabBarController.swift */; };
 		CEFCCB91DC1EE06BB0D684D1 /* Whipcream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B63F1877EFCBD03210C3EBA /* Whipcream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CF1FAF106D79727D99728FAE /* InternalBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8034477AB473DD8ABF9352E5 /* InternalBrowser.swift */; };
-		D59C3C9EF850125224F39D47 /* Whipcream+Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58221AFA3F9EB58C2693C1A1 /* Whipcream+Control.swift */; };
+		D59C3C9EF850125224F39D47 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58221AFA3F9EB58C2693C1A1 /* Control.swift */; };
 		DA794182042B686B70345BA2 /* Whipcream.h in Headers */ = {isa = PBXBuildFile; fileRef = 962DDB20488D6D0BB27BB2D7 /* Whipcream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAB231C14D98464C84456AD0 /* Whipcream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD113B4D58F8827ACAC1208 /* Whipcream.swift */; };
 		DC7A536C1A172A5541C599AE /* WhipcreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955DEE56199B09AEE97F1472 /* WhipcreamTests.swift */; };
@@ -111,7 +111,7 @@
 		3F4CE9801B75B6F9EC2C1CAE /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
 		44653A81E3F7ED4BBB30E078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4B2C887507409FFA70855C83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		58221AFA3F9EB58C2693C1A1 /* Whipcream+Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Whipcream+Control.swift"; sourceTree = "<group>"; };
+		58221AFA3F9EB58C2693C1A1 /* Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
 		5B63F1877EFCBD03210C3EBA /* Whipcream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Whipcream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6133400F557DF5B9EEDE7233 /* ButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
 		61BEEC039A93241523617538 /* MarginListExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarginListExampleVC.swift; sourceTree = "<group>"; };
@@ -266,7 +266,6 @@
 				636824E981D1951AA9861FD6 /* Pipeline.swift */,
 				962DDB20488D6D0BB27BB2D7 /* Whipcream.h */,
 				6BD113B4D58F8827ACAC1208 /* Whipcream.swift */,
-				58221AFA3F9EB58C2693C1A1 /* Whipcream+Control.swift */,
 				22279D12266870E5413BE526 /* Buttons */,
 				7B669FDFC7BED34C94FE3250 /* Extensions */,
 				A848DE0FAA6EF721AB7C592B /* ImageView */,
@@ -388,6 +387,7 @@
 		C08F9CF54BD34BBB6D8B245F /* Enumerations */ = {
 			isa = PBXGroup;
 			children = (
+				58221AFA3F9EB58C2693C1A1 /* Control.swift */,
 				654688EA674BAE39E2D205E1 /* MarginSize.swift */,
 			);
 			path = Enumerations;
@@ -599,7 +599,7 @@
 				B31FEBA74A1F4D6DDB78944A /* UIView+Size.swift in Sources */,
 				71E7A7882E8AC64F4ABFE089 /* View.swift in Sources */,
 				7E464B49587969DCA7EABA02 /* WhipLayout.swift in Sources */,
-				D59C3C9EF850125224F39D47 /* Whipcream+Control.swift in Sources */,
+				D59C3C9EF850125224F39D47 /* Control.swift in Sources */,
 				DAB231C14D98464C84456AD0 /* Whipcream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

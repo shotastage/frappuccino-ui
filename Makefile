@@ -31,4 +31,3 @@ push_doc:
   		--build-tool-arguments -scheme,Whipcream \
   		--module Whipcream \
   		--root-url https://shotastage.github.io/whipped-cream/ \
-  		--output ./ \

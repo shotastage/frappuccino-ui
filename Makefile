@@ -35,3 +35,4 @@ push_doc:
 	git add .
 	git commit -m "update doc"
 	git push -u origin gh-pages
+	git checkout master

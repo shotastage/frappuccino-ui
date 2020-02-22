@@ -9,7 +9,7 @@
 import UIKit
 
 
-open class Margin {
+open class WPMargin {
 
     public var top: CGFloat
 

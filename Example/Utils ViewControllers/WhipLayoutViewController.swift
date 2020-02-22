@@ -24,7 +24,7 @@ final class WhipLayoutViewController: UIViewController {
         let redRectangle = UIView()
         let blueRectangle = UIView()
 
-        WLViewStack(root: self.view)
+        WhipViewStack(root: self.view)
         .add(redRectangle) { view in
             view.backgroundColor = .red
             view.frame = CGRect(x: 0, y: 150, width: Size(self.view).width, height: 50)

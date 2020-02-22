@@ -31,3 +31,7 @@ push_doc:
   		--build-tool-arguments -scheme,Whipcream \
   		--module Whipcream \
   		--root-url https://shotastage.github.io/whipped-cream/ \
+	mv ./Docs/* ./
+	git add .
+	git commit -m "update doc"
+	git push -u origin gh-pages

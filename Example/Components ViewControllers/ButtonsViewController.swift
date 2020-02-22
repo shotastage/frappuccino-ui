@@ -36,7 +36,7 @@ final class ButtonsViewController: UIViewController {
         circleButton1.size = 80
         circleButton1.backgroundColor = .red
 
-        WLViewStack(root: view)
+        WhipViewStack(root: view)
         .add(defaultButton)
         .add(basicButton1)
         .add(circleButton1)

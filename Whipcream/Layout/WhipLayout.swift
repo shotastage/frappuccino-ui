@@ -8,9 +8,15 @@
 
 import UIKit
 
+@available(*, deprecated, renamed: "WhipViewStack")
+open class WLViewStack { }
 
 
-open class ViewStack {
+@available(*, deprecated, renamed: "WhipLayoutStack")
+open class WLayoutStack { }
+
+
+open class WhipViewStack {
 
     let root: UIView?
     
@@ -22,7 +28,7 @@ open class ViewStack {
     }
 
     @discardableResult
-    public func add(_ view: UIView, _ f: @escaping (UIView) -> Void = {_ in }) -> ViewStack {
+    public func add(_ view: UIView, _ f: @escaping (UIView) -> Void = {_ in }) -> WhipViewStack {
         f(view)
         self.root?.addSubview(view)
         return self
@@ -30,7 +36,7 @@ open class ViewStack {
 }
 
 
-open class LayoutStack {
+open class WhipLayoutStack {
 
     let root: UIView?
 
@@ -63,26 +69,26 @@ open class LayoutStack {
     }
     
     @discardableResult
-    public func frame(_ stylingTo: UIView, x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat) -> LayoutStack {
+    public func frame(_ stylingTo: UIView, x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat) -> WhipLayoutStack {
         stylingTo.frame = CGRect(x: x, y: y, width: width, height: height)
         return self
     }
     
     @discardableResult
-    public func point(_ stylingTo: UIView, x: CGFloat, y: CGFloat) -> LayoutStack {
+    public func point(_ stylingTo: UIView, x: CGFloat, y: CGFloat) -> WhipLayoutStack {
         stylingTo.frame.origin = CGPoint(x: x, y: y)
         return self
     }
 
     @discardableResult
-    public func size(_ stylingTo: UIView, width: CGFloat, height: CGFloat) -> LayoutStack {
+    public func size(_ stylingTo: UIView, width: CGFloat, height: CGFloat) -> WhipLayoutStack {
         stylingTo.frame.size = CGSize(width: width, height: height)
         return self
     }
  
     @discardableResult
     public func position(_ stylingTo: UIView, size: CGSize, top: CGFloat = 0.0, bottom: CGFloat = 0.0,
-                         right: CGFloat = 0.0, left: CGFloat = 0.0) -> LayoutStack {
+                         right: CGFloat = 0.0, left: CGFloat = 0.0) -> WhipLayoutStack {
         stylingTo.frame = CGRect(
             x: ((root?.frame.width ?? 0) - size.width) / 2,
             y: ((root?.frame.height ?? 0) - size.height - bottom),
@@ -95,7 +101,7 @@ open class LayoutStack {
 
     @discardableResult
     public func auto(_ stylingTo: UIView, top: CGFloat = 0.0, bottom: CGFloat = 0.0,
-                     right: CGFloat = 0.0, left: CGFloat = 0.0) -> LayoutStack {
+                     right: CGFloat = 0.0, left: CGFloat = 0.0) -> WhipLayoutStack {
 
         let calcWidth = (root?.bounds.width ?? 0) - (right + left)
 
@@ -113,7 +119,7 @@ open class LayoutStack {
     }
     
     @discardableResult
-    public func fixHeight(_ stylingTo: UIView, right: CGFloat = 0.0, left: CGFloat = 0.0, height: CGFloat) -> LayoutStack {
+    public func fixHeight(_ stylingTo: UIView, right: CGFloat = 0.0, left: CGFloat = 0.0, height: CGFloat) -> WhipLayoutStack {
         
         let calcWidth = (root?.bounds.width ?? 0) - (right + left)
 
@@ -130,7 +136,7 @@ open class LayoutStack {
     }
     
     @discardableResult
-    public func fixWidth(_ stylingTo: UIView, top: CGFloat = 0.0, bottom: CGFloat = 0.0, width: CGFloat) -> LayoutStack {
+    public func fixWidth(_ stylingTo: UIView, top: CGFloat = 0.0, bottom: CGFloat = 0.0, width: CGFloat) -> WhipLayoutStack {
         let calcWidth = (root?.bounds.width ?? 0) - width
 
         let calcHeight = (root?.bounds.height ?? 0) - (top + bottom)
@@ -146,7 +152,7 @@ open class LayoutStack {
     }
 
     @discardableResult
-    func stack(_ applyTo: UIView, _ f: @escaping (LayoutStack) -> LayoutStack) -> LayoutStack {
+    func stack(_ applyTo: UIView, _ f: @escaping (WhipLayoutStack) -> WhipLayoutStack) -> WhipLayoutStack {
         return f(self)
     }
 }
@@ -164,12 +170,12 @@ open class WhipLayout {
 
     @available(*, deprecated, renamed: "width")
     public static func width(marginRight: CGFloat = 0.0, marginLeft: CGFloat = 0.0) -> CGFloat {
-        return LayoutStack.dangerousAbsoluteScreenWidth - (marginRight + marginLeft)
+        return WhipLayoutStack.dangerousAbsoluteScreenWidth - (marginRight + marginLeft)
     }
 
     @available(*, deprecated, renamed: "height")
     public static func height(marginTop: CGFloat = 0.0, marginBottom: CGFloat = 0.0) -> CGFloat {
-        return LayoutStack.dangerousAbsoluteScreenHeight - (marginTop + marginBottom)
+        return WhipLayoutStack.dangerousAbsoluteScreenHeight - (marginTop + marginBottom)
     }
 
     @available(*, deprecated, renamed: "position")
@@ -188,13 +194,13 @@ open class WhipLayout {
     public static func auto(top: CGFloat = 0.0,
                               bottom: CGFloat = 0.0, right: CGFloat = 0.0, left: CGFloat = 0.0) -> CGRect {
         
-        let calcWidth = LayoutStack.dangerousAbsoluteScreenWidth - (right + left)
+        let calcWidth = WhipLayoutStack.dangerousAbsoluteScreenWidth - (right + left)
         
-        let calcHeight = LayoutStack.dangerousAbsoluteScreenHeight - (top + bottom)
+        let calcHeight = WhipLayoutStack.dangerousAbsoluteScreenHeight - (top + bottom)
         
         return CGRect(
-            x: (LayoutStack.dangerousAbsoluteScreenWidth - calcWidth) / 2,
-            y: (WLayoutStack.dangerousAbsoluteScreenHeight - calcHeight - bottom)LayoutStack
+            x: (WhipLayoutStack.dangerousAbsoluteScreenWidth - calcWidth) / 2,
+            y: (WhipLayoutStack.dangerousAbsoluteScreenHeight - calcHeight - bottom),
             width: calcWidth,
             height: calcHeight
         )

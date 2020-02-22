@@ -24,8 +24,8 @@ final class SizeExampleViewController: UIViewController {
 
         root.configureLayout { (layout) in
             layout.isEnabled = true
-            layout.width = YGValue(Size.width)
-            layout.height = YGValue(Size.height)
+            layout.width = YGValue(Size(self.view).width)
+            layout.height = YGValue(Size(self.view).height)
             layout.flexDirection = .column
             layout.justifyContent = .flexStart
             layout.alignItems = .center
@@ -34,8 +34,8 @@ final class SizeExampleViewController: UIViewController {
 
         self.stackView.configureLayout { (layout) in
             layout.isEnabled = true
-            layout.width = YGValue(Size.width)
-            layout.height = YGValue(Size.height)
+            layout.width = YGValue(Size(self.view).width)
+            layout.height = YGValue(Size(self.view).height)
         }
         root.addSubview(stackView)
 
@@ -43,8 +43,8 @@ final class SizeExampleViewController: UIViewController {
         registerMenu(title: "SafeArea Top: \(Size.Safearea.top)")
         registerMenu(title: "SafeArea Bottom: \(Size.Safearea.bottom)")
         registerMenu(title: "Status Bar Height: \(Size.statusbarHeight)")
-        registerMenu(title: "Screen Size Width: \(Size.width)")
-        registerMenu(title: "Screen Size Height: \(Size.height)")
+        registerMenu(title: "Screen Size Width: \(Size(self.view).width)")
+        registerMenu(title: "Screen Size Height: \(Size(self.view).height)")
 
         root.yoga.applyLayout(preservingOrigin: true)
     }

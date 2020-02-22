@@ -24,8 +24,8 @@ final class HeadingsViewController: UIViewController {
 
         root.configureLayout { (layout) in
             layout.isEnabled = true
-            layout.width = YGValue(Size.width)
-            layout.height = YGValue(Size.height)
+            layout.width = YGValue(Size(self.view).width)
+            layout.height = YGValue(Size(self.view).height)
             layout.flexDirection = .column
             layout.justifyContent = .flexStart
             layout.alignItems = .center
@@ -34,8 +34,8 @@ final class HeadingsViewController: UIViewController {
 
         self.stackView.configureLayout { (layout) in
             layout.isEnabled = true
-            layout.width = YGValue(Size.width)
-            layout.height = YGValue(Size.height)
+            layout.width = YGValue(Size(self.view).width)
+            layout.height = YGValue(Size(self.view).height)
         }
         root.addSubview(stackView)
 

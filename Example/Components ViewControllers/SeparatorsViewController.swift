@@ -22,8 +22,8 @@ final class SeparatorsViewController: UIViewController {
         root.backgroundColor = .white
         root.configureLayout { (layout) in
             layout.isEnabled = true
-            layout.width = YGValue(Size.width)
-            layout.height = YGValue(Size.height)
+            layout.width = YGValue(Size(self.view).width)
+            layout.height = YGValue(Size(self.view).height)
             layout.flexDirection = .column
             layout.justifyContent = .flexStart
             layout.alignItems = .center
@@ -34,7 +34,7 @@ final class SeparatorsViewController: UIViewController {
         let marginView: MarginSeparator = MarginSeparator()
         marginView.configureLayout { (layout) in
             layout.isEnabled = true
-            layout.width = YGValue(Size.width)
+            layout.width = YGValue(Size(self.view).width)
             layout.height = 90
         }
         root.addSubview(marginView)
@@ -43,7 +43,7 @@ final class SeparatorsViewController: UIViewController {
         let titleLabel: Heading = Heading(text: "Separator Line", size: .h2)
         titleLabel.configureLayout { (layout) in
             layout.isEnabled = true
-            layout.width = YGValue(Size.width)
+            layout.width = YGValue(Size(self.view).width)
         }
         root.addSubview(titleLabel)
 

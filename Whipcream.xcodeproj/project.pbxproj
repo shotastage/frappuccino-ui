@@ -13,6 +13,7 @@
 		2152D63FA4744E4C40555CAA /* BasicButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28ADAED3FE26717134F3C8D /* BasicButtons.swift */; };
 		24A8F4E138D1E8EC8B7934AC /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE002CE4D4EEC620DAE2C5 /* TextViewController.swift */; };
 		253EDB192400C70400528D39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253EDB182400C70400528D39 /* SceneDelegate.swift */; };
+		253EDB1C2400CC0C00528D39 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253EDB1B2400CC0C00528D39 /* CGFloat.swift */; };
 		2EDEDACA11ABD5A25DD825A4 /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636824E981D1951AA9861FD6 /* Pipeline.swift */; };
 		4322CF11C79AF935D69AF04F /* Whipcream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B63F1877EFCBD03210C3EBA /* Whipcream.framework */; };
 		43D04C3E566A9886DF8EF594 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9DB44519E29C439AFADD29 /* Pods_Example.framework */; };
@@ -104,6 +105,7 @@
 		19CB7E0BAA729F4B84A8082E /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		228B8DF1D3C088BF4A71AA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		253EDB182400C70400528D39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		253EDB1B2400CC0C00528D39 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		2EDF82C091C4D8B2AA480EDD /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		316E7ECACD3729D1740E9D31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F4CE9801B75B6F9EC2C1CAE /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
@@ -212,6 +214,14 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		253EDB1A2400CBF500528D39 /* TypeTools */ = {
+			isa = PBXGroup;
+			children = (
+				253EDB1B2400CC0C00528D39 /* CGFloat.swift */,
+			);
+			path = TypeTools;
+			sourceTree = "<group>";
+		};
 		41E4D827ED7FBAC27D214575 /* NavigationBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,13 +273,14 @@
 				9928352F4F37635A615327DF /* Layout */,
 				41E4D827ED7FBAC27D214575 /* NavigationBar */,
 				BD536F30CCB4DF4DB30FBA00 /* Separators */,
-				C08F9CF54BD34BBB6D8B245F /* Size */,
+				C08F9CF54BD34BBB6D8B245F /* Enumerations */,
 				16AA53137CEE10EF2BCD86E8 /* Stylesheet */,
 				FB701639AFD527FA1D9A6583 /* TabBar */,
 				B1C4BF8F61F558DA01461685 /* TableView */,
 				1F82CD28BAE2F4C12C357189 /* Text */,
 				135454184865BA2C7592A001 /* View */,
 				72AEA56C0389137AC8D3227B /* Web */,
+				253EDB1A2400CBF500528D39 /* TypeTools */,
 			);
 			path = Whipcream;
 			sourceTree = "<group>";
@@ -374,12 +385,12 @@
 			path = Separators;
 			sourceTree = "<group>";
 		};
-		C08F9CF54BD34BBB6D8B245F /* Size */ = {
+		C08F9CF54BD34BBB6D8B245F /* Enumerations */ = {
 			isa = PBXGroup;
 			children = (
 				654688EA674BAE39E2D205E1 /* MarginSize.swift */,
 			);
-			path = Size;
+			path = Enumerations;
 			sourceTree = "<group>";
 		};
 		DE3CEDE32A71C0BE129A1EA9 /* WhipcreamTests */ = {
@@ -565,6 +576,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				253EDB1C2400CC0C00528D39 /* CGFloat.swift in Sources */,
 				2152D63FA4744E4C40555CAA /* BasicButtons.swift in Sources */,
 				61CB00E384D67BD7701C7677 /* CircleButton.swift in Sources */,
 				0EDF025A157428B4F15DCD68 /* ComponentSize.swift in Sources */,

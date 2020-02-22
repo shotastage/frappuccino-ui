@@ -26,21 +26,6 @@ final class ComponentsViewController: UIViewController {
 
         let root = self.view!
 
-        root.configureLayout { (layout) in
-            layout.isEnabled = true
-            layout.width = YGValue(Size.width)
-            layout.height = YGValue(Size.height)
-            layout.flexDirection = .column
-            layout.justifyContent = .flexStart
-            layout.alignItems = .center
-            layout.flexWrap = .noWrap
-        }
-
-        self.stackView.configureLayout { (layout) in
-            layout.isEnabled = true
-            layout.width = YGValue(Size.width)
-            layout.height = YGValue(Size.height)
-        }
         root.addSubview(stackView)
 
         registerMenu(title: "Headings", handler:  {
@@ -58,13 +43,33 @@ final class ComponentsViewController: UIViewController {
         registerMenu(title: "Text", handler: {
             self.toText()
         })
+    }
+    
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        let root = self.view!
 
+        root.configureLayout { (layout) in
+            layout.isEnabled = true
+            layout.width = YGValue(self.view.bounds.width)
+            layout.height = YGValue(self.view.bounds.height)
+            layout.flexDirection = .column
+            layout.justifyContent = .flexStart
+            layout.alignItems = .center
+            layout.flexWrap = .noWrap
+        }
+
+        self.stackView.configureLayout { (layout) in
+            layout.isEnabled = true
+            layout.width = YGValue(Size(self.view).width)
+            layout.height = YGValue(Size(self.view).height)
+        }
 
         root.yoga.applyLayout(preservingOrigin: true)
     }
 }
-
-
 
 extension ComponentsViewController {
     func registerMenu(title: String, handler: Optional<() -> Void> = nil) {
@@ -86,24 +91,13 @@ extension ComponentsViewController {
 }
 
 extension ComponentsViewController {
-
     func toHeadings() {
-        // Alert.confirm(message: "Setting screen does not implemented now !")
-
         let next: UIViewController = HeadingsViewController()
-        //next.modalTransitionStyle = .crossDissolve
-
-        // present(next, animated: true, completion: nil)
         self.show(next, sender: nil)
     }
 
     func toButtons() {
-        // Alert.confirm(message: "Setting screen does not implemented now !")
-
         let next: UIViewController = ButtonsViewController()
-        //next.modalTransitionStyle = .crossDissolve
-
-        // present(next, animated: true, completion: nil)
         self.show(next, sender: nil)
     }
 

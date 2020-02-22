@@ -15,7 +15,7 @@ open class Separator: UIView {
         super.init(frame: frame)
 
         self.backgroundColor = UIColor(hex: "CCD1D9")
-        self.frame.size.width = Size.width
+        self.frame.size.width = Size(self).width
         self.frame.size.height = 0.8
     }
 

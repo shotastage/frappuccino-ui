@@ -18,7 +18,7 @@ open class MarginSeparator: UIView {
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
-        self.frame.size.width = Size.width
+        self.frame.size.width = Size(self).width
         self.frame.size.height = 70
     }
 }

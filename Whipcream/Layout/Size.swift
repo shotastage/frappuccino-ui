@@ -10,47 +10,30 @@ import UIKit
 
 
 public struct Size {
-        
-    @available(iOS 13.0, *)
-    public static let keyWindow = UIApplication.shared.connectedScenes
-    .filter({$0.activationState == .foregroundActive})
-    .map({$0 as? UIWindowScene})
-    .compactMap({$0})
-    .first?.windows
-    .filter({$0.isKeyWindow}).first
-    
-    
-    
-    /*
-    var keyWindow: UIWindow? {
-           return windowScene?.windows
-               .first(where: { $0.isKeyWindow })
-    }
-    */
-    
-    public static var width: CGFloat {
-        if #available(iOS 13.0, *) {
-            // return Size.keyWindow?.bounds.size.width ?? 0
-            return UIApplication.shared.keyWindow?.bounds.size.width ?? 0
 
-        }
-        
-        return UIApplication.shared.keyWindow?.bounds.size.width ?? 0
-    }
+    let root: UIView?
 
-    public static var height: CGFloat {
-        if #available(iOS 13.0, *) {
-            // return Size.keyWindow?.bounds.size.height ?? 0
-            return UIApplication.shared.keyWindow?.bounds.size.height ?? 0
-
-        }
-        
-        return UIApplication.shared.keyWindow?.bounds.size.height ?? 0
+    public init(_ root: UIView) {
+        self.root = root
     }
     
-    public static let halfWidth: CGFloat = Size.width / 2
+    public var width: CGFloat {
+        self.root?.bounds.width ?? 0
+    }
+
+    public var height: CGFloat {
+        self.root?.bounds.height ?? 0
+    }
     
-    public static let halfHeight: CGFloat = Size.height / 2
+    @available(*, deprecated)
+    public let halfWidth: CGFloat = 0.0
+    
+    @available(*, deprecated)
+    public let halfHeight: CGFloat = 0.0
+    
+    public func ratio(_ orientation: Int, _ ratio: Int) -> CGFloat {
+        return self.height * CGFloat(ratio / 100)
+    }
 
     public static let statusbarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
 

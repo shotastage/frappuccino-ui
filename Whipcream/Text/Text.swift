@@ -31,7 +31,7 @@ open class Text: UILabel {
         self.text = text
         self.numberOfLines = line
         self.font = UIFont(name: font, size: size)
-        self.frame.size.width = Size.width - MarginSize.small
+        self.frame.size.width = Size(self).width - MarginSize.small
         self.textAlignment = .left
         self.textColor = self.color
     }

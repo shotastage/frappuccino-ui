@@ -11,10 +11,17 @@ Fundamental UI appearance and utilities for Bhaa.
 
 # Documentation
 
-Document is [here](./Docs/INDEX.md).
+Document is [here](https://2oo.pw/dyG7I).
 
+# Installation
 
+## Carthage
 
+In your `Cartfile`:
+
+```
+github "shotastage/whipped-cream" "master"
+```
 
 # 🤪  Author
 

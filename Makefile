@@ -40,11 +40,11 @@ doc:
   		--build-tool-arguments -scheme,Whipcream \
   		--module Whipcream \
   		--root-url https://shotastage.github.io/whipped-cream/ \
-  		--output latest/ \
+  		--output docs/
 
 push_doc:
 	git checkout gh-pages
-	git merge master
+	git rebase master
 	bundle exec jazzy \
   		--clean \
   		--author Shota Shimazu \
@@ -53,7 +53,7 @@ push_doc:
   		--build-tool-arguments -scheme,Whipcream \
   		--module Whipcream \
   		--root-url https://shotastage.github.io/whipped-cream/ \
-	mv ./Docs/* ./
+  		--output docs/
 	git add .
 	git commit -m "update doc"
 	git push -u origin gh-pages

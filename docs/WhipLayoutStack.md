@@ -1,7 +1,7 @@
-# WLayoutStack
+# WhipLayoutStack
 
-**WLayoutStack** provides layout to views. It calculate position and size of UI.
-Here is an example for usage of `WLayoutStack`.
+**WhipLayoutStack** provides layout to views. It calculate position and size of UI.
+Here is an example for usage of `WhipLayoutStack`.
 
 ```swift
 
@@ -16,7 +16,7 @@ let button = UIButton()
 override func viewDidLayoutSubviews() {
   super.viewDidLayoutSubviews()
 
-  WLayoutStack(root: view)
+  WhipLayoutStack(root: view)
     .size(scrollView, width: view.bounds.width, height: view.bounds.height)
     .auto(window, top: view.bounds.height / 2 - 40, bottom: 0, right: 0, left: 0)
     .frame(heading, x: 0, y: 40, width: view.bounds.width, height: 65)
@@ -25,7 +25,7 @@ override func viewDidLayoutSubviews() {
 }
 ```
 
-Without **WLayoutStack**, this process is generally written as follows.
+Without **WhipLayoutStack**, this process is generally written as follows.
 This example does not use AutoLayout.
 
 ```swift

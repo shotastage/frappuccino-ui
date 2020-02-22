@@ -1,7 +1,7 @@
-# WLViewStack
+# WhipViewStack
 
-**WLViewStack** class realize composing or adding subviews structurally.
-Here is an example for usage of `WLViewStack`.
+**WhipViewStack** class realize composing or adding subviews structurally.
+Here is an example for usage of `WhipViewStack`.
 
 ```swift
 
@@ -14,11 +14,11 @@ let input = UITextField()
 let button = UIButton()
 
 // Compose UI structure
-WLViewStack(root: view)
+WhipViewStack(root: view)
   .add(scrollView) { view in
-  WLViewStack(root: view)
+  WhipViewStack(root: view)
       .add(self.window) { win in
-      WLViewStack(root: win)
+      WhipViewStack(root: win)
         .add(self.heading)
         .add(self.message)
         .add(self.input)
@@ -27,7 +27,7 @@ WLViewStack(root: view)
 }
 ```
 
-Without **WLViewStack**, this process is generally written as follows.
+Without **WhipViewStack**, this process is generally written as follows.
 It is simple & easy to create a new UIView or inherited class instance and add its subview respectively.
 However, in large app, UI structure is too complicated to trace and manage UIs.
 Thus, using **WLViewStack** realize efficent UI composing.

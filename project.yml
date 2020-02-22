@@ -1,0 +1,33 @@
+name: Whipcream
+attributes:
+  ORGANIZATIONNAME: "Shota Shimazu"
+options:
+  bundleIdPrefix: com.shotastage
+  deploymentTarget:
+    iOS: 12.0
+targets:
+  Whipcream:
+    type: framework
+    platform: iOS
+    sources:
+      - Whipcream
+    settings:
+      base:
+        INFOPLIST_FILE: Whipcream/Info.plist
+  WhipcreamTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - WhipcreamTests
+    settings:
+      base:
+        INFOPLIST_FILE: WhipcreamTests/Info.plist
+    dependencies:
+      - target: Whipcream
+  Example:
+    type: application
+    platform: iOS
+    sources:
+      - Example
+    dependencies:
+      - target: Whipcream

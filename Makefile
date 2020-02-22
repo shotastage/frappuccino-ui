@@ -44,7 +44,7 @@ doc:
 
 push_doc:
 	git checkout gh-pages
-	git rebase master
+	git merge master
 	bundle exec jazzy \
   		--clean \
   		--author Shota Shimazu \

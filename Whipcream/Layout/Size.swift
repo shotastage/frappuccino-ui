@@ -12,6 +12,16 @@ import UIKit
 
 public struct Size {
 
+    public static var dangerousAbsoluteScreenWidth: CGFloat {
+        print("[Whipcream Warning] ", "Use dangerousAbsoluteScreenWidth is might be collapsed layout.")
+        return UIScreen.main.bounds.size.width
+    }
+
+    public static var dangerousAbsoluteScreenHeight: CGFloat {
+        print("[Whipcream Warning] ", "Use dangerousAbsoluteScreenHeight is might be collapsed layout.")
+        return UIScreen.main.bounds.size.height
+    }
+
     let root: UIView?
 
     public init(_ root: UIView) {

@@ -59,7 +59,6 @@ public struct Size {
             }
         }
 
-
         public static var top: CGFloat {
             get {
                 let window = UIApplication.shared.keyWindow

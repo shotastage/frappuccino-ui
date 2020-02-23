@@ -11,10 +11,6 @@ clean:
 
 doc_clean:
 	rm -rf ./jazzy/
-<<<<<<< HEAD
-
-class_doc:
-=======
 
 class_doc:
 	bundle exec jazzy \
@@ -32,7 +28,6 @@ doc_push:
 	git merge master
 	mkdocs build
 	mv ./site/* ./
->>>>>>> master
 	bundle exec jazzy \
   		--clean \
   		--author Shota Shimazu \
@@ -41,11 +36,7 @@ doc_push:
   		--build-tool-arguments -scheme,Whipcream \
   		--module Whipcream \
   		--root-url https://shotastage.github.io/whipped-cream/ \
-<<<<<<< HEAD
-  		--output jazzy/
-=======
   		--output src_doc/
 	git add .
 	git commit -m "update doc"
 	git push -u origin gh-pages
->>>>>>> master

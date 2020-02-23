@@ -71,27 +71,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Enumerations/Control.swift",
-      "line": 12,
-      "symbol": "OnOff",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Enumerations/Control.swift",
-      "line": 13,
-      "symbol": "OnOff.on",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Enumerations/Control.swift",
-      "line": 14,
-      "symbol": "OnOff.off",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Enumerations/MarginSize.swift",
       "line": 12,
       "symbol": "MarginSize",

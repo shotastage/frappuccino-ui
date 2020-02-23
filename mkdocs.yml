@@ -4,3 +4,7 @@ theme:
     palette:
         primary: 'red'
         accent: 'red'
+markdown_extensions:
+    - admonition
+    - footnotes
+    - codehilite

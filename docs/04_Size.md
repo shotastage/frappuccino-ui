@@ -7,7 +7,8 @@
 
 To get absolute screen size, use `dangerousAbsoluteScreenWidth` or `dangerousAbsoluteScreenHeight` properties.
 
-This sizes is **ABSOLUTE SCREEN SIZE** that it is not recommended to use calculate layout.
+!!! Danger
+    This sizes is **ABSOLUTE SCREEN SIZE** that it is not recommended to use calculate layout.
 
 ```swift
 

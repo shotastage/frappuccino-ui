@@ -52,3 +52,9 @@ window.addSubview(input)
 let button = UIButton()
 window.addSubview(button)
 ```
+
+### Deprecations
+
+- **WLViewStack** has been renamed to `WhipViewStack`.
+
+- **WLayoutStack** has been renamed to `WLayoutStack`.

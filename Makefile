@@ -37,5 +37,6 @@ doc_push:
   		--module Whipcream \
   		--root-url https://shotastage.github.io/whipped-cream/ \
   		--output src_doc/
+	git add .
 	git commit -m "update doc"
 	git push -u origin gh-pages

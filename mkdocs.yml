@@ -8,3 +8,12 @@ markdown_extensions:
     - admonition
     - footnotes
     - codehilite
+nav:
+    - 'Welcome': 'index.md'
+    - 'Install':
+        - 'Carthage': 'install/carthage.md'
+        - 'CocoaPods': 'install/cocoapods.md'
+    - 'Layout':
+        - 'WhipViewStack': 'layout/WhipViewStack.md'
+        - 'WhipLayoutStack': 'layout/WhipLayoutStack.md'
+    

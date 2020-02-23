@@ -1,0 +1,929 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Buttons/BasicButtons.swift",
+      "line": 13,
+      "symbol": "Button",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Buttons/BasicButtons.swift",
+      "line": 15,
+      "symbol": "Button.textColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Buttons/BasicButtons.swift",
+      "line": 17,
+      "symbol": "Button.cornerRadius",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Buttons/BasicButtons.swift",
+      "line": 23,
+      "symbol": "Button.width",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Buttons/BasicButtons.swift",
+      "line": 44,
+      "symbol": "Button.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Buttons/BasicButtons.swift",
+      "line": 49,
+      "symbol": "Button.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Buttons/CircleButton.swift",
+      "line": 12,
+      "symbol": "CircleButton",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Buttons/CircleButton.swift",
+      "line": 14,
+      "symbol": "CircleButton.size",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Buttons/CircleButton.swift",
+      "line": 16,
+      "symbol": "CircleButton.boxShadow",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Buttons/CircleButton.swift",
+      "line": 36,
+      "symbol": "CircleButton.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Enumerations/Control.swift",
+      "line": 12,
+      "symbol": "OnOff",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Enumerations/Control.swift",
+      "line": 13,
+      "symbol": "OnOff.on",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Enumerations/Control.swift",
+      "line": 14,
+      "symbol": "OnOff.off",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Enumerations/MarginSize.swift",
+      "line": 12,
+      "symbol": "MarginSize",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Enumerations/MarginSize.swift",
+      "line": 14,
+      "symbol": "MarginSize.small",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Extensions/UIColor+HexColor.swift",
+      "line": 12,
+      "symbol": "HexadecimalColor",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Extensions/UIView+Size.swift",
+      "line": 12,
+      "symbol": "UIViewSizeProperties",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Extensions/UIView+Size.swift",
+      "line": 15,
+      "symbol": "UIViewSizeProperties",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Extensions/UIView+Size.swift",
+      "line": 17,
+      "symbol": "UIViewSizeProperties.width",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Extensions/UIView+Size.swift",
+      "line": 27,
+      "symbol": "UIViewSizeProperties.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Extensions/UIView+Size.swift",
+      "line": 37,
+      "symbol": "UIViewSizeProperties.x",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Extensions/UIView+Size.swift",
+      "line": 47,
+      "symbol": "UIViewSizeProperties.y",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Extensions/UIView+Size.swift",
+      "line": 57,
+      "symbol": "UIViewSizeProperties.right",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Extensions/UIView+Size.swift",
+      "line": 67,
+      "symbol": "UIViewSizeProperties.bottom",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/ImageView/Image.swift",
+      "line": 12,
+      "symbol": "Image",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/ImageView/Image.swift",
+      "line": 14,
+      "symbol": "Image.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/ImageView/Image.swift",
+      "line": 18,
+      "symbol": "Image.init(image:aspect:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/ImageView/Image.swift",
+      "line": 23,
+      "symbol": "Image.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Margin.swift",
+      "line": 12,
+      "symbol": "Margin",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Margin.swift",
+      "line": 14,
+      "symbol": "Margin.top",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Margin.swift",
+      "line": 16,
+      "symbol": "Margin.bottom",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Margin.swift",
+      "line": 18,
+      "symbol": "Margin.right",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Margin.swift",
+      "line": 20,
+      "symbol": "Margin.left",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Margin.swift",
+      "line": 22,
+      "symbol": "Margin.init(top:bottom:right:left:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Margin.swift",
+      "line": 29,
+      "symbol": "Margin.view",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Size.swift",
+      "line": 13,
+      "symbol": "Size",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Size.swift",
+      "line": 15,
+      "symbol": "Size.dangerousAbsoluteScreenWidth",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Size.swift",
+      "line": 20,
+      "symbol": "Size.dangerousAbsoluteScreenHeight",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Size.swift",
+      "line": 27,
+      "symbol": "Size.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Size.swift",
+      "line": 31,
+      "symbol": "Size.width",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Size.swift",
+      "line": 35,
+      "symbol": "Size.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Size.swift",
+      "line": 40,
+      "symbol": "Size.halfWidth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Size.swift",
+      "line": 43,
+      "symbol": "Size.halfHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Size.swift",
+      "line": 45,
+      "symbol": "Size.ratio(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Size.swift",
+      "line": 49,
+      "symbol": "Size.statusbarHeight",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Size.swift",
+      "line": 51,
+      "symbol": "Size.widthFitToScreen(ratio:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Size.swift",
+      "line": 55,
+      "symbol": "Size.heightFitToScreen(ratio:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Size.swift",
+      "line": 60,
+      "symbol": "Size.Safearea",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Size.swift",
+      "line": 62,
+      "symbol": "Size.Safearea.available",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Size.swift",
+      "line": 72,
+      "symbol": "Size.Safearea.top",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/Size.swift",
+      "line": 79,
+      "symbol": "Size.Safearea.bottom",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 71,
+      "symbol": "WhipLayoutStack.dangerousAbsoluteScreenWidth",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 76,
+      "symbol": "WhipLayoutStack.dangerousAbsoluteScreenHeight",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 81,
+      "symbol": "WhipLayoutStack.init(root:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 85,
+      "symbol": "WhipLayoutStack.width(marginRight:marginLeft:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 89,
+      "symbol": "WhipLayoutStack.height(marginTop:marginBottom:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 94,
+      "symbol": "WhipLayoutStack.frame(_:x:y:width:height:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 100,
+      "symbol": "WhipLayoutStack.point(_:x:y:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 106,
+      "symbol": "WhipLayoutStack.size(_:width:height:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 112,
+      "symbol": "WhipLayoutStack.position(_:size:top:bottom:right:left:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 125,
+      "symbol": "WhipLayoutStack.auto(_:top:bottom:right:left:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 144,
+      "symbol": "WhipLayoutStack.fixHeight(_:right:left:height:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 161,
+      "symbol": "WhipLayoutStack.fixWidth(_:top:bottom:width:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 185,
+      "symbol": "WhipLayout",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 188,
+      "symbol": "WhipLayout.absoluteWidth",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 191,
+      "symbol": "WhipLayout.absoluteHeight",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 194,
+      "symbol": "WhipLayout.width(marginRight:marginLeft:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 199,
+      "symbol": "WhipLayout.height(marginTop:marginBottom:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 204,
+      "symbol": "WhipLayout.position(_:size:top:bottom:right:left:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Layout/WhipLayout.swift",
+      "line": 216,
+      "symbol": "WhipLayout.auto(top:bottom:right:left:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/NavigationBar/NavigationBarController.swift",
+      "line": 12,
+      "symbol": "NavigationBarController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Pipeline.swift",
+      "line": 13,
+      "symbol": "Pipeline",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Pipeline.swift",
+      "line": 19,
+      "symbol": "Pipeline.shared",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Separators/MarginSeparator.swift",
+      "line": 12,
+      "symbol": "MarginSeparator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Separators/MarginSeparator.swift",
+      "line": 14,
+      "symbol": "MarginSeparator.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Separators/MarginSeparator.swift",
+      "line": 18,
+      "symbol": "MarginSeparator.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Separators/SeparatorView.swift",
+      "line": 12,
+      "symbol": "Separator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Separators/SeparatorView.swift",
+      "line": 14,
+      "symbol": "Separator.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Separators/SeparatorView.swift",
+      "line": 22,
+      "symbol": "Separator.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Stylesheet/ComponentSize.swift",
+      "line": 15,
+      "symbol": "Stylesheet.frameSize()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Stylesheet/Stylesheet.swift",
+      "line": 13,
+      "symbol": "Stylesheet",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Stylesheet/Stylesheet.swift",
+      "line": 13,
+      "symbol": "Stylesheet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Stylesheet/Stylesheet.swift",
+      "line": 17,
+      "symbol": "Stylesheet.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Stylesheet/Stylesheet.swift",
+      "line": 21,
+      "symbol": "Stylesheet.y",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Stylesheet/Stylesheet.swift",
+      "line": 25,
+      "symbol": "Stylesheet.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Stylesheet/Stylesheet.swift",
+      "line": 34,
+      "symbol": "Stylesheet.construct()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/TabBar/TabBarController.swift",
+      "line": 12,
+      "symbol": "TabBarController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/TabBar/TabBarController.swift",
+      "line": 14,
+      "symbol": "TabBarController.tabBarHeight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/TabBar/TabBarController.swift",
+      "line": 16,
+      "symbol": "TabBarController.verticalOffset",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/TabBar/TabBarController.swift",
+      "line": 18,
+      "symbol": "TabBarController.safeAreaBottom",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/TabBar/TabBarController.swift",
+      "line": 28,
+      "symbol": "TabBarController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/TabBar/TabBarController.swift",
+      "line": 33,
+      "symbol": "TabBarController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/TableView/TableView.swift",
+      "line": 13,
+      "symbol": "TableView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/TableView/TableView.swift",
+      "line": 15,
+      "symbol": "TableView.isNoneSeparator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/TableView/TableView.swift",
+      "line": 17,
+      "symbol": "TableView.init(frame:style:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/TableView/TableView.swift",
+      "line": 27,
+      "symbol": "TableView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Heading.swift",
+      "line": 13,
+      "symbol": "Heading",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Heading.swift",
+      "line": 18,
+      "symbol": "Heading.fontSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Heading.swift",
+      "line": 20,
+      "symbol": "Heading.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Heading.swift",
+      "line": 32,
+      "symbol": "Heading.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Heading.swift",
+      "line": 36,
+      "symbol": "Heading.init(text:size:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Heading.swift",
+      "line": 47,
+      "symbol": "Heading.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Heading.swift",
+      "line": 51,
+      "symbol": "Heading.drawText(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Heading.swift",
+      "line": 57,
+      "symbol": "Heading.Headings",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Heading.swift",
+      "line": 58,
+      "symbol": "Heading.Headings.h1",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Heading.swift",
+      "line": 59,
+      "symbol": "Heading.Headings.h2",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Heading.swift",
+      "line": 60,
+      "symbol": "Heading.Headings.h3",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Heading.swift",
+      "line": 61,
+      "symbol": "Heading.Headings.h4",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Heading.swift",
+      "line": 62,
+      "symbol": "Heading.Headings.h5",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Heading.swift",
+      "line": 63,
+      "symbol": "Heading.Headings.h6",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Heading.swift",
+      "line": 66,
+      "symbol": "Heading.free(size:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/NXTextView.swift",
+      "line": 14,
+      "symbol": "NXTextView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/NXTextView.swift",
+      "line": 16,
+      "symbol": "NXTextView.text",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/NXTextView.swift",
+      "line": 18,
+      "symbol": "NXTextView.font",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/NXTextView.swift",
+      "line": 20,
+      "symbol": "NXTextView.textColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/NXTextView.swift",
+      "line": 22,
+      "symbol": "NXTextView.textAlignment",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/NXTextView.swift",
+      "line": 24,
+      "symbol": "NXTextView.attributedText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/NXTextView.swift",
+      "line": 27,
+      "symbol": "NXTextView.init(text:size:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/NXTextView.swift",
+      "line": 32,
+      "symbol": "NXTextView.TextSize",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/NXTextView.swift",
+      "line": 33,
+      "symbol": "NXTextView.TextSize.bold",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Text.swift",
+      "line": 13,
+      "symbol": "Text",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Text.swift",
+      "line": 19,
+      "symbol": "Text.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Text.swift",
+      "line": 24,
+      "symbol": "Text.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Text.swift",
+      "line": 28,
+      "symbol": "Text.init(text:size:font:line:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Text.swift",
+      "line": 39,
+      "symbol": "Text.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Text/Text.swift",
+      "line": 43,
+      "symbol": "Text.drawText(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/View/View.swift",
+      "line": 11,
+      "symbol": "View",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/View/View.swift",
+      "line": 18,
+      "symbol": "View.init(style:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/View/View.swift",
+      "line": 22,
+      "symbol": "View.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/View/View.swift",
+      "line": 28,
+      "symbol": "RoundView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Web/InternalBrowser.swift",
+      "line": 13,
+      "symbol": "WhipBrowserController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream/Whipcream/Whipcream.swift",
+      "line": 11,
+      "symbol": "Whipcream",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/shotastage/Developer/github.com/shotastage/whipped-cream"
+}

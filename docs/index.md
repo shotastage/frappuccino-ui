@@ -12,17 +12,6 @@
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
 
-
-# Installation
-
-## Carthage
-
-In your `Cartfile`:
-
-```
-github "shotastage/whipped-cream" "master"
-```
-
 # 🤪  Author
 
 **Shota Shimazu**

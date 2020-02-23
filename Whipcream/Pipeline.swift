@@ -20,10 +20,5 @@ open class Pipeline {
         get {
             return Pipeline()
         }
-
-        set {
-            self.shared = newValue
-        }
     }
-
 }

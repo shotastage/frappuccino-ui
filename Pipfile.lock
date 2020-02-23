@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "2b304c383895a1d2a351122a6a748292af959c12e9b13405428906f267e2f41c"
+            "sha256": "069dc8e4d3b2f7481be098912002985d454361cf93663cd2bcdfd4b43b2d4c7a"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -23,6 +23,19 @@
             ],
             "version": "==7.0"
         },
+        "fontawesome-markdown": {
+            "hashes": [
+                "sha256:95a12f1629a595afc4aabc886ffdb8b5fa0ae8f77e8f3437b7b1942d91f91f4b"
+            ],
+            "index": "pypi",
+            "version": "==0.2.6"
+        },
+        "future": {
+            "hashes": [
+                "sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"
+            ],
+            "version": "==0.18.2"
+        },
         "jinja2": {
             "hashes": [
                 "sha256:93187ffbc7808079673ef52771baa950426fd664d3aad1d0fa3e95644360e250",
@@ -36,6 +49,16 @@
                 "sha256:89254f78d7529d7ea0a3417d224c34287ebfe266b05e67e51facaf82c27f0f66"
             ],
             "version": "==2.6.1"
+        },
+        "lunr": {
+            "extras": [
+                "languages"
+            ],
+            "hashes": [
+                "sha256:1208622930c915a07e6f8e8640474357826bad48534c0f57969b6fca9bffc88e",
+                "sha256:7be69d7186f65784a4f2adf81e5c58efd6a9921aa95966babcb1f2f2ada75c20"
+            ],
+            "version": "==0.5.6"
         },
         "markdown": {
             "hashes": [
@@ -84,11 +107,11 @@
         },
         "mkdocs": {
             "hashes": [
-                "sha256:17d34329aad75d5de604b9ed4e31df3a4d235afefdc46ce7b1964fddb2e1e939",
-                "sha256:8cc8b38325456b9e942c981a209eaeb1e9f3f77b493ad755bfef889b9c8d356a"
+                "sha256:1e385a70aea8a9dedb731aea4fd5f3704b2074801c4f96f06b2920999babda8a",
+                "sha256:9243291392f59e20b655e4e46210233453faf97787c2cf72176510e868143174"
             ],
             "index": "pypi",
-            "version": "==1.0.4"
+            "version": "==1.1"
         },
         "mkdocs-material": {
             "hashes": [
@@ -97,6 +120,12 @@
             ],
             "index": "pypi",
             "version": "==4.6.3"
+        },
+        "nltk": {
+            "hashes": [
+                "sha256:bed45551259aa2101381bbdd5df37d44ca2669c5c3dad72439fa459b29137d94"
+            ],
+            "version": "==3.4.5"
         },
         "pygments": {
             "hashes": [

@@ -45,6 +45,7 @@ doc_push:
   		--output jazzy/
 =======
   		--output src_doc/
+	git add .
 	git commit -m "update doc"
 	git push -u origin gh-pages
 >>>>>>> master

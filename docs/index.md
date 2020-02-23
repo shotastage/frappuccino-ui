@@ -5,12 +5,9 @@
 ![iOS 10+](https://img.shields.io/badge/iOS-12%2B-blue.svg?style=flat)
 ![Swift 5](https://img.shields.io/badge/Swift-5-orange.svg?style=flat)
 
-## Project layout
+## Classes Documentation
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Detail classes or structs implementation doc is [here](https://shotastage.github.io/whipped-cream/src_doc/).
 
 # 🤪  Author
 

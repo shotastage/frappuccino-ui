@@ -8,6 +8,31 @@
 
 import UIKit
 
+
+open class WhipContainer {
+    
+    public init() { }
+
+    @discardableResult
+    public func register() -> WhipContainer {
+        return self
+    }
+    
+    @discardableResult
+    public func VStack(_ views: UIView...) -> WhipContainer {
+        return self
+    }
+    
+    @discardableResult
+    public func HStack(_ views: UIView...) -> WhipContainer {
+        return self
+    }
+}
+
+public func Node(_ view: UIView, _ f: @escaping (UIView) -> UIView) -> UIView {
+    return f(view)
+}
+
 /**
 WLViewStack has been renamed to `WhipViewStack`.
 */

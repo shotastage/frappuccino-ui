@@ -9,6 +9,12 @@
 import UIKit
 
 
+protocol Buildable {
+    associatedtype BuildType
+
+    func build() -> BuildType
+}
+
 open class WhipContainer {
     
     public init() { }

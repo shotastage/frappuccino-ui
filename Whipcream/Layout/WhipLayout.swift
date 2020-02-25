@@ -9,35 +9,27 @@
 import UIKit
 
 
-protocol Buildable {
-    associatedtype BuildType
 
-    func build() -> BuildType
-}
-
-open class WhipContainer {
-    
-    public init() { }
-
-    @discardableResult
-    public func register() -> WhipContainer {
-        return self
-    }
-    
-    @discardableResult
-    public func VStack(_ views: UIView...) -> WhipContainer {
-        return self
-    }
-    
-    @discardableResult
-    public func HStack(_ views: UIView...) -> WhipContainer {
-        return self
+@_functionBuilder
+public struct ViewStackBuilder {
+    public static func buildBlock(_ views: UIView...) -> [UIView] {
+        return views
     }
 }
 
-public func Node(_ view: UIView, _ f: @escaping (UIView) -> UIView) -> UIView {
-    return f(view)
+public struct VStack {
+    let views: [UIView]
+    
+    @discardableResult
+    public init(_ view: UIView, @ViewStackBuilder _ builder: () -> [UIView]) {
+        views = builder()
+        
+        for v in views {
+            view.addSubview(v)
+        }
+    }
 }
+
 
 /**
 WLViewStack has been renamed to `WhipViewStack`.

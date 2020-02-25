@@ -16,18 +16,23 @@ import AloeStackView
 
 final class WhipLayoutViewController: UIViewController {
 
-    private let stackView = AloeStackView()
-
     override func viewDidLoad() {
         self.navigationItem.title = "WhipLayout Engine"
+        self.view.backgroundColor = .white
         
         let redRectangle = UIView()
+        redRectangle.frame = CGRect(x: 0, y: 300, width: 100, height: 100)
+        redRectangle.backgroundColor = .red
+        
+        
         let blueRectangle = UIView()
+        blueRectangle.frame = CGRect(x: 0, y: 500, width: 100, height: 100)
+        blueRectangle.backgroundColor = .blue
 
-        WhipContainer()
-        .VStack(
-            redRectangle,
+        
+        VStack(view) {
+            redRectangle
             blueRectangle
-        )
+        }
     }
 }

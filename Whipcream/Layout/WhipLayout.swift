@@ -18,18 +18,18 @@ public struct ViewStackBuilder {
 }
 
 
-@discardableResult
-public func VStack(_ view: UIView, @ViewStackBuilder _ builder: () -> [UIView]) -> UIView {
-    
-    let views: [UIView]
 
-    views = builder()
-        
-    for v in views {
-        view.addSubview(v)
-    }
+public struct VStack {
+    let views: [UIView]
     
-    return view
+    @discardableResult
+    public init(_ view: UIView, @ViewStackBuilder _ builder: () -> [UIView]) {
+        views = builder()
+        
+        for v in views {
+            view.addSubview(v)
+        }
+    }
 }
 
 /**

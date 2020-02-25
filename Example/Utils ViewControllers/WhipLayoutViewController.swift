@@ -28,11 +28,21 @@ final class WhipLayoutViewController: UIViewController {
         let blueRectangle = UIView()
         blueRectangle.frame = CGRect(x: 0, y: 500, width: 100, height: 100)
         blueRectangle.backgroundColor = .blue
+        
+        let cyanRectangle = UIView()
+        cyanRectangle.frame = CGRect(x: 200, y: 300, width: 100, height: 100)
+        cyanRectangle.backgroundColor = .cyan
 
         
+        let pinkRectangle = UIView()
+        pinkRectangle.frame = CGRect(x: 200, y: 500, width: 100, height: 100)
+
+        pinkRectangle.backgroundColor = .blue
         VStack(view) {
             redRectangle
             blueRectangle
+            cyanRectangle
+            pinkRectangle
         }
     }
 }

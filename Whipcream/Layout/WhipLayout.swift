@@ -17,19 +17,20 @@ public struct ViewStackBuilder {
     }
 }
 
-public struct VStack {
-    let views: [UIView]
-    
-    @discardableResult
-    public init(_ view: UIView, @ViewStackBuilder _ builder: () -> [UIView]) {
-        views = builder()
-        
-        for v in views {
-            view.addSubview(v)
-        }
-    }
-}
 
+@discardableResult
+public func VStack(_ view: UIView, @ViewStackBuilder _ builder: () -> [UIView]) -> UIView {
+    
+    let views: [UIView]
+
+    views = builder()
+        
+    for v in views {
+        view.addSubview(v)
+    }
+    
+    return view
+}
 
 /**
 WLViewStack has been renamed to `WhipViewStack`.

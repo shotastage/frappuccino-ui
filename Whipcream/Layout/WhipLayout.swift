@@ -10,14 +10,18 @@ import UIKit
 
 
 
+
+
 @_functionBuilder
 public struct ViewStackBuilder {
-    public static func buildBlock(_ views: UIView...) -> [UIView] {
-        return views
+    
+    public typealias V = UIView
+
+    
+    public static func buildBlock(_ v: V...) -> [V] {
+        return v
     }
 }
-
-
 
 public struct VStack {
     let views: [UIView]
@@ -30,6 +34,14 @@ public struct VStack {
             view.addSubview(v)
         }
     }
+    
+    public func inject() -> [UIView] {
+        return views
+    }
+}
+
+public struct HStack {
+    let views: [UIView]
 }
 
 /**

@@ -6,21 +6,18 @@
 //  Copyright © 2019 Shota Shimazu. All rights reserved.
 //
 
-import UIKit
-import YogaKit
-import Whipcream
 import AloeStackView
-
+import UIKit
+import Whipcream
+import YogaKit
 
 final class SeparatorsViewController: UIViewController {
-
-
     override func viewDidLoad() {
-        self.navigationItem.title = "Separators"
+        navigationItem.title = "Separators"
 
-        let root = self.view!
+        let root = view!
         root.backgroundColor = .white
-        root.configureLayout { (layout) in
+        root.configureLayout { layout in
             layout.isEnabled = true
             layout.width = YGValue(Size(self.view).width)
             layout.height = YGValue(Size(self.view).height)
@@ -30,31 +27,26 @@ final class SeparatorsViewController: UIViewController {
             layout.flexWrap = .noWrap
         }
 
-
         let marginView: MarginSeparator = MarginSeparator()
-        marginView.configureLayout { (layout) in
+        marginView.configureLayout { layout in
             layout.isEnabled = true
             layout.width = YGValue(Size(self.view).width)
             layout.height = 90
         }
         root.addSubview(marginView)
 
-
         let titleLabel: Heading = Heading(text: "Separator Line", size: .h2)
-        titleLabel.configureLayout { (layout) in
+        titleLabel.configureLayout { layout in
             layout.isEnabled = true
             layout.width = YGValue(Size(self.view).width)
         }
         root.addSubview(titleLabel)
 
-
         let separatorView: Separator = Separator()
-        separatorView.configureLayout { (layout) in
+        separatorView.configureLayout { layout in
             layout.isEnabled = true
         }
         root.addSubview(separatorView)
-
-
 
         root.yoga.applyLayout(preservingOrigin: false)
     }

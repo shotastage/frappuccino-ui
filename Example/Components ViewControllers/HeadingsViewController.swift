@@ -6,23 +6,20 @@
 //  Copyright © 2019 Shota Shimazu. All rights reserved.
 //
 
-import UIKit
-import YogaKit
-import Whipcream
 import AloeStackView
-
-
+import UIKit
+import Whipcream
+import YogaKit
 
 final class HeadingsViewController: UIViewController {
-
     private let stackView = AloeStackView()
 
     override func viewDidLoad() {
-        self.navigationItem.title = "Headings"
+        navigationItem.title = "Headings"
 
-        let root = self.view!
+        let root = view!
 
-        root.configureLayout { (layout) in
+        root.configureLayout { layout in
             layout.isEnabled = true
             layout.width = YGValue(Size(self.view).width)
             layout.height = YGValue(Size(self.view).height)
@@ -32,13 +29,12 @@ final class HeadingsViewController: UIViewController {
             layout.flexWrap = .noWrap
         }
 
-        self.stackView.configureLayout { (layout) in
+        stackView.configureLayout { layout in
             layout.isEnabled = true
             layout.width = YGValue(Size(self.view).width)
             layout.height = YGValue(Size(self.view).height)
         }
         root.addSubview(stackView)
-
 
         let h1 = Heading(text: "Heading 1", size: .h1)
         stackView.addRow(h1)
@@ -60,5 +56,4 @@ final class HeadingsViewController: UIViewController {
 
         root.yoga.applyLayout(preservingOrigin: true)
     }
-
 }

@@ -40,3 +40,7 @@ doc_push:
 	git add .
 	git commit -m "update doc"
 	git push -u origin gh-pages
+
+
+format:
+	swiftformat --config .swiftformat Whipcream/ Example/

@@ -6,22 +6,20 @@
 //  Copyright © 2019 Shota Shimazu. All rights reserved.
 //
 
-import UIKit
-import YogaKit
 import AloeStackView
+import UIKit
 import Whipcream
-
+import YogaKit
 
 final class UtilViewController: UIViewController {
-
     private let stackView = AloeStackView()
 
     override func viewDidLoad() {
-        self.navigationItem.title = "Utilities"
+        navigationItem.title = "Utilities"
 
-        let root = self.view!
+        let root = view!
 
-        root.configureLayout { (layout) in
+        root.configureLayout { layout in
             layout.isEnabled = true
             layout.width = YGValue(Size(self.view).width)
             layout.height = YGValue(Size(self.view).height)
@@ -31,13 +29,12 @@ final class UtilViewController: UIViewController {
             layout.flexWrap = .noWrap
         }
 
-        self.stackView.configureLayout { (layout) in
+        stackView.configureLayout { layout in
             layout.isEnabled = true
             layout.width = YGValue(Size(self.view).width)
             layout.height = YGValue(Size(self.view).height)
         }
         root.addSubview(stackView)
-
 
         registerMenu(title: "Size Utils", handler: {
             self.toSizeClass()
@@ -46,7 +43,7 @@ final class UtilViewController: UIViewController {
         registerMenu(title: "Margins", handler: {
             self.toMarginClass()
         })
-        
+
         registerMenu(title: "WhipLayout", handler: {
             self.toWhipLayout()
         })
@@ -55,10 +52,8 @@ final class UtilViewController: UIViewController {
     }
 }
 
-
-
 extension UtilViewController {
-    private func registerMenu(title: String, handler: Optional<() -> Void> = nil) {
+    private func registerMenu(title: String, handler: (() -> Void)? = nil) {
         let label = UILabel()
         label.text = title
         stackView.addRow(label)
@@ -66,7 +61,7 @@ extension UtilViewController {
         if handler != nil {
             stackView.setTapHandler(
                 forRow: label,
-                handler: { label in
+                handler: { _ in
                     handler!()
                 }
             )
@@ -75,24 +70,22 @@ extension UtilViewController {
     }
 }
 
-
-
 extension UtilViewController {
     func toSizeClass() {
         let next: UIViewController = SizeExampleViewController()
 
-        self.show(next, sender: nil)
+        show(next, sender: nil)
     }
 
     func toMarginClass() {
         let next: UIViewController = MarginListExampleViewController()
 
-        self.show(next, sender: nil)
+        show(next, sender: nil)
     }
-    
+
     func toWhipLayout() {
         let next: UIViewController = WhipLayoutViewController()
 
-        self.show(next, sender: nil)
+        show(next, sender: nil)
     }
 }

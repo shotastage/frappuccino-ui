@@ -6,23 +6,20 @@
 //  Copyright © 2019 Shota Shimazu. All rights reserved.
 //
 
-import UIKit
-import YogaKit
-import Whipcream
 import AloeStackView
-
-
+import UIKit
+import Whipcream
+import YogaKit
 
 final class SizeExampleViewController: UIViewController {
-
     private let stackView = AloeStackView()
 
     override func viewDidLoad() {
-        self.navigationItem.title = "Size Classes"
+        navigationItem.title = "Size Classes"
 
-        let root = self.view!
+        let root = view!
 
-        root.configureLayout { (layout) in
+        root.configureLayout { layout in
             layout.isEnabled = true
             layout.width = YGValue(Size(self.view).width)
             layout.height = YGValue(Size(self.view).height)
@@ -32,25 +29,23 @@ final class SizeExampleViewController: UIViewController {
             layout.flexWrap = .noWrap
         }
 
-        self.stackView.configureLayout { (layout) in
+        stackView.configureLayout { layout in
             layout.isEnabled = true
             layout.width = YGValue(Size(self.view).width)
             layout.height = YGValue(Size(self.view).height)
         }
         root.addSubview(stackView)
 
-
         registerMenu(title: "SafeArea Top: \(Size.Safearea.top)")
         registerMenu(title: "SafeArea Bottom: \(Size.Safearea.bottom)")
         registerMenu(title: "Status Bar Height: \(Size.statusbarHeight)")
-        registerMenu(title: "Screen Size Width: \(Size(self.view).width)")
-        registerMenu(title: "Screen Size Height: \(Size(self.view).height)")
+        registerMenu(title: "Screen Size Width: \(Size(view).width)")
+        registerMenu(title: "Screen Size Height: \(Size(view).height)")
 
         root.yoga.applyLayout(preservingOrigin: true)
     }
 
-
-    private func registerMenu(title: String, handler: Optional<() -> Void> = nil) {
+    private func registerMenu(title: String, handler: (() -> Void)? = nil) {
         let label = UILabel()
         label.text = title
         stackView.addRow(label)
@@ -58,7 +53,7 @@ final class SizeExampleViewController: UIViewController {
         if handler != nil {
             stackView.setTapHandler(
                 forRow: label,
-                handler: { label in
+                handler: { _ in
                     handler!()
                 }
             )

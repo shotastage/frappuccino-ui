@@ -6,52 +6,46 @@
 //  Copyright © 2019 Shota Shimazu. All rights reserved.
 //
 
-import UIKit
 import AloeStackView
-import YogaKit
+import UIKit
 import Whipcream
-
-
+import YogaKit
 
 final class ComponentsViewController: UIViewController {
-
-
     private let stackView = AloeStackView()
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.navigationItem.title = "Components"
+        navigationItem.title = "Components"
 
-        let root = self.view!
+        let root = view!
 
         root.addSubview(stackView)
 
-        registerMenu(title: "Headings", handler:  {
+        registerMenu(title: "Headings", handler: {
             self.toHeadings()
         })
 
-        registerMenu(title: "Buttons", handler:  {
+        registerMenu(title: "Buttons", handler: {
             self.toButtons()
         })
 
         registerMenu(title: "Separators", handler: {
             self.toSeparators()
         })
-        
+
         registerMenu(title: "Text", handler: {
             self.toText()
         })
     }
-    
-    
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
-        let root = self.view!
 
-        root.configureLayout { (layout) in
+        let root = view!
+
+        root.configureLayout { layout in
             layout.isEnabled = true
             layout.width = YGValue(self.view.bounds.width)
             layout.height = YGValue(self.view.bounds.height)
@@ -61,7 +55,7 @@ final class ComponentsViewController: UIViewController {
             layout.flexWrap = .noWrap
         }
 
-        self.stackView.configureLayout { (layout) in
+        stackView.configureLayout { layout in
             layout.isEnabled = true
             layout.width = YGValue(Size(self.view).width)
             layout.height = YGValue(Size(self.view).height)
@@ -72,7 +66,7 @@ final class ComponentsViewController: UIViewController {
 }
 
 extension ComponentsViewController {
-    func registerMenu(title: String, handler: Optional<() -> Void> = nil) {
+    func registerMenu(title: String, handler: (() -> Void)? = nil) {
         let label = UILabel()
         label.text = title
         stackView.addRow(label)
@@ -80,7 +74,7 @@ extension ComponentsViewController {
         if handler != nil {
             stackView.setTapHandler(
                 forRow: label,
-                handler: { label in
+                handler: { _ in
                     handler!()
                 }
             )
@@ -93,21 +87,21 @@ extension ComponentsViewController {
 extension ComponentsViewController {
     func toHeadings() {
         let next: UIViewController = HeadingsViewController()
-        self.show(next, sender: nil)
+        show(next, sender: nil)
     }
 
     func toButtons() {
         let next: UIViewController = ButtonsViewController()
-        self.show(next, sender: nil)
+        show(next, sender: nil)
     }
 
     func toSeparators() {
         let next: UIViewController = SeparatorsViewController()
-        self.show(next, sender: nil)
+        show(next, sender: nil)
     }
-    
+
     func toText() {
         let next: UIViewController = TextViewController()
-        self.show(next, sender: nil)
+        show(next, sender: nil)
     }
 }

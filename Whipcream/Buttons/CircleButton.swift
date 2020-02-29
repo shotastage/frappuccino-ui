@@ -8,9 +8,7 @@
 
 import UIKit
 
-
 open class CircleButton: UIButton {
-
     public var size: CGFloat = 60
 
     public var boxShadow: OnOff = .off
@@ -20,20 +18,20 @@ open class CircleButton: UIButton {
 
         self.frame.size.width = size
         self.frame.size.height = size
-        self.layer.cornerRadius = 0.5 * self.bounds.size.width
-        self.clipsToBounds = false
-        self.backgroundColor = UIColor(hex: "ff0033")
+        layer.cornerRadius = 0.5 * bounds.size.width
+        clipsToBounds = false
+        backgroundColor = UIColor(hex: "ff0033")
 
         // Box-shadow
         if boxShadow.boolean {
-            self.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-            self.layer.shadowColor = UIColor(hex: "ff0033").cgColor
-            self.layer.shadowOpacity = 0.6
-            self.layer.shadowRadius = 4
+            layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+            layer.shadowColor = UIColor(hex: "ff0033").cgColor
+            layer.shadowOpacity = 0.6
+            layer.shadowRadius = 4
         }
     }
 
-    required public init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

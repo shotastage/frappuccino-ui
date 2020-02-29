@@ -8,17 +8,15 @@
 
 import UIKit
 
-
 open class MarginSeparator: UIView {
-
-    override public init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
 
-    required public init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
-        self.frame.size.width = Size(self).width
-        self.frame.size.height = 70
+        frame.size.width = Size(self).width
+        frame.size.height = 70
     }
 }

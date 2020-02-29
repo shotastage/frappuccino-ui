@@ -8,70 +8,66 @@
 
 import UIKit
 
-
-public protocol UIViewSizeProperties: class { }
-
+public protocol UIViewSizeProperties: AnyObject {}
 
 extension UIViewSizeProperties where Self: UIView {
-
     public var width: CGFloat {
         get {
-            return self.frame.size.width
+            frame.size.width
         }
 
         set {
-            self.frame.size.width = newValue
+            frame.size.width = newValue
         }
     }
 
     public var height: CGFloat {
-        get{
-            return self.frame.size.height
+        get {
+            frame.size.height
         }
 
         set {
-            self.frame.size.height = newValue
+            frame.size.height = newValue
         }
     }
 
     public var x: CGFloat {
         get {
-            return self.frame.origin.x
+            frame.origin.x
         }
 
         set {
-            self.frame.origin.x = newValue
+            frame.origin.x = newValue
         }
     }
 
     public var y: CGFloat {
-        get{
-            return self.frame.origin.y
+        get {
+            frame.origin.y
         }
 
         set {
-            self.frame.origin.y = newValue
+            frame.origin.y = newValue
         }
     }
 
     public var right: CGFloat {
         get {
-            return self.frame.origin.x + self.frame.size.width
+            frame.origin.x + frame.size.width
         }
 
         set {
-            self.x = newValue - self.frame.size.width
+            x = newValue - frame.size.width
         }
     }
 
     public var bottom: CGFloat {
         get {
-            return self.frame.origin.y + self.frame.size.height
+            frame.origin.y + frame.size.height
         }
 
         set {
-            self.y = newValue - self.frame.size.height
+            y = newValue - frame.size.height
         }
     }
-
 }

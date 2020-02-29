@@ -8,9 +8,7 @@
 
 import UIKit
 
-
 open class Margin {
-
     public var top: CGFloat
 
     public var bottom: CGFloat
@@ -27,7 +25,8 @@ open class Margin {
     }
 
     public var view: UIEdgeInsets {
-        return UIEdgeInsets(
-            top: top, left: left, bottom: bottom, right: right)
+        UIEdgeInsets(
+            top: top, left: left, bottom: bottom, right: right
+        )
     }
 }

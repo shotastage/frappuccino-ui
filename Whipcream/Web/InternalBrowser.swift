@@ -9,7 +9,4 @@
 import UIKit
 import WebKit
 
-
-open class WhipBrowserController: UIViewController {
-    
-}
+open class WhipBrowserController: UIViewController {}

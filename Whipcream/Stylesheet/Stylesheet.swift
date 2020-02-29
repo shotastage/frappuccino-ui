@@ -8,10 +8,7 @@
 
 import UIKit
 
-
-
 open class Stylesheet {
-
     /// Size
     public var width: CGFloat = 0.0
     public var height: CGFloat = 0.0
@@ -30,8 +27,7 @@ open class Stylesheet {
     ///
     public var frame: CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)
 
-
     public func construct() {
-        self.frame = self.frameSize()
+        frame = frameSize()
     }
 }

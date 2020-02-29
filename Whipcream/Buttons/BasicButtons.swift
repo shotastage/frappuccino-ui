@@ -8,10 +8,7 @@
 
 import UIKit
 
-
-
 open class Button: UIButton {
-
     public var textColor: UIColor = UIColor(hex: "ffffff")
 
     public var cornerRadius: CGFloat = 15 {
@@ -26,32 +23,28 @@ open class Button: UIButton {
         }
     }
 
-
-
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.layer.cornerRadius = cornerRadius
+        layer.cornerRadius = cornerRadius
 
-        self.setTitle("TITLE", for: .normal)
-        self.tintColor = self.textColor
-        self.setTitleColor(textColor, for: .normal)
-        self.backgroundColor = UIColor(hex: "4286f4")
+        setTitle("TITLE", for: .normal)
+        tintColor = textColor
+        setTitleColor(textColor, for: .normal)
+        backgroundColor = UIColor(hex: "4286f4")
 
         updateLayout()
     }
 
-
-    override open func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
-
     }
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.layer.cornerRadius = self.bounds.size.height / 2
-        self.layer.borderWidth = 1
-        self.frame.size.width = width
 
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        layer.cornerRadius = bounds.size.height / 2
+        layer.borderWidth = 1
+        frame.size.width = width
     }
 
     private func updateLayout() {

@@ -8,10 +8,7 @@
 
 import UIKit
 
-
-
 open class Text: UILabel {
-
     /// Font propertoes
 
     public var fontSize: CGFloat = 22.0
@@ -21,7 +18,7 @@ open class Text: UILabel {
     /// Layout properties
     public var margin: Margin = Margin()
 
-    override public init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
 
@@ -29,18 +26,18 @@ open class Text: UILabel {
         self.init()
 
         self.text = text
-        self.numberOfLines = line
+        numberOfLines = line
         self.font = UIFont(name: font, size: size)
-        self.frame.size.width = Size(self).width - MarginSize.small
-        self.textAlignment = .left
-        self.textColor = self.color
+        frame.size.width = Size(self).width - MarginSize.small
+        textAlignment = .left
+        textColor = color
     }
 
-    required public init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 
-    override open func drawText(in rect: CGRect) {
+    open override func drawText(in rect: CGRect) {
         let newRect = rect.inset(by: margin.view)
 
         super.drawText(in: newRect)

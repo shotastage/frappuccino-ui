@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 open class NavigationBarController: UINavigationController {
     /// Nothing
 }

@@ -13,6 +13,8 @@ import YogaKit
 
 final class WhipLayoutViewController: UIViewController {
     override func viewDidLoad() {
+        super.viewDidLoad()
+
         navigationItem.title = "WhipLayout Engine"
         view.backgroundColor = .white
 

@@ -13,6 +13,8 @@ import YogaKit
 
 final class SeparatorsViewController: UIViewController {
     override func viewDidLoad() {
+        super.viewDidLoad()
+
         navigationItem.title = "Separators"
 
         let root = view!

@@ -10,9 +10,9 @@ import UIKit
 
 @_functionBuilder
 public struct ViewStackBuilder {
-    public typealias V = UIView
+    public typealias View = UIView
 
-    public static func buildBlock(_ v: V...) -> [V] {
+    public static func buildBlock(_ v: View...) -> [View] {
         v
     }
 }

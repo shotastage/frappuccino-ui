@@ -14,6 +14,12 @@ targets:
     settings:
       base:
         INFOPLIST_FILE: Whipcream/Info.plist
+    postbuildScripts:
+      - name: Run SwiftLint
+        script: >
+          swiftlint
+          --path ${SRCROOT}
+          --config ${SRCROOT}/.swiftlint.yml
   WhipcreamTests:
     type: bundle.unit-test
     platform: iOS

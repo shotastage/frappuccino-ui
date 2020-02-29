@@ -17,6 +17,8 @@ final class ButtonsViewController: UIViewController {
     let circleButton1 = CircleButton()
 
     override func viewDidLoad() {
+        super.viewDidLoad()
+
         navigationController?.navigationBar.isTranslucent = false
         navigationItem.title = "Buttons"
 

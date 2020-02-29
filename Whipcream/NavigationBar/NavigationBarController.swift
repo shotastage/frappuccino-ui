@@ -8,6 +8,4 @@
 
 import UIKit
 
-open class NavigationBarController: UINavigationController {
-    /// Nothing
-}
+open class NavigationBarController: UINavigationController {}

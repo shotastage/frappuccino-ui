@@ -10,6 +10,8 @@ import UIKit
 
 final class MainViewController: UITabBarController {
     override func viewDidLoad() {
+        super.viewDidLoad()
+
         let tab1 = ComponentsViewController()
         tab1.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
 

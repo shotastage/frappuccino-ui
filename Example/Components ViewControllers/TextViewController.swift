@@ -14,6 +14,8 @@ final class TextViewController: UIViewController {
     private let stackView = AloeStackView()
 
     override func viewDidLoad() {
+        super.viewDidLoad()
+
         navigationItem.title = "Headings"
 
         let root = view!

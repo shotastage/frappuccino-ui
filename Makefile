@@ -17,10 +17,10 @@ class_doc:
   		--clean \
   		--author Shota Shimazu \
   		--author_url https://shotastage.xyz \
-  		--github_url https://github.com/shotastage/whipped-cream \
+  		--github_url https://github.com/shotastage/whipcream-swift \
   		--build-tool-arguments -scheme,Whipcream \
   		--module Whipcream \
-  		--root-url https://shotastage.github.io/whipped-cream/ \
+  		--root-url https://shotastage.github.io/whipcream-swift/ \
   		--output jazzy/
 
 doc_push:
@@ -32,10 +32,10 @@ doc_push:
   		--clean \
   		--author Shota Shimazu \
   		--author_url https://shotastage.xyz \
-  		--github_url https://github.com/shotastage/whipped-cream \
+  		--github_url https://github.com/shotastage/whipcream-swift \
   		--build-tool-arguments -scheme,Whipcream \
   		--module Whipcream \
-  		--root-url https://shotastage.github.io/whipped-cream/ \
+  		--root-url https://shotastage.github.io/whipcream-swift/ \
   		--output src_doc/
 	git add .
 	git commit -m "update doc"

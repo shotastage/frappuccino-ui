@@ -17,7 +17,6 @@
 		630BFCBFE625A272E2BBBF02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38010D19ACAB4EC4E884C515 /* LaunchScreen.storyboard */; };
 		661A095650B81884169D2851 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301DCEC1D39853678A43ECD9 /* SceneDelegate.swift */; };
 		69F6C19D47192A20568D5BE6 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B6CDC6BF056CE568AC5D6 /* Image.swift */; };
-		71E7A7882E8AC64F4ABFE089 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061403A9C369A27792D0CB8C /* View.swift */; };
 		7A155DF18C82B2C5B9E67B47 /* HeadingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1C637623E4C0B59C32736F /* HeadingsViewController.swift */; };
 		7F9C3B5B55093B7D7DDDDA85 /* ComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C20D5817D4BE52B4946ADD7 /* ComponentsViewController.swift */; };
 		8D1F34A78F34E4479AABCDB8 /* WhipLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5485DF38507CC8D278153A /* WhipLayout.swift */; };
@@ -95,7 +94,6 @@
 
 /* Begin PBXFileReference section */
 		03C513FA64C6A4DCC6E784E7 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
-		061403A9C369A27792D0CB8C /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		19CB7E0BAA729F4B84A8082E /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		228B8DF1D3C088BF4A71AA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2EDF82C091C4D8B2AA480EDD /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
@@ -170,14 +168,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		135454184865BA2C7592A001 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				061403A9C369A27792D0CB8C /* View.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		1F82CD28BAE2F4C12C357189 /* Text */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,7 +240,6 @@
 				FB701639AFD527FA1D9A6583 /* TabBar */,
 				B1C4BF8F61F558DA01461685 /* TableView */,
 				1F82CD28BAE2F4C12C357189 /* Text */,
-				135454184865BA2C7592A001 /* View */,
 				72AEA56C0389137AC8D3227B /* Web */,
 			);
 			path = Whipcream;
@@ -593,7 +582,6 @@
 				F5A920F3627F4D6962492906 /* Text.swift in Sources */,
 				A98221541F18112BF937CFDF /* UIColor+HexColor.swift in Sources */,
 				B31FEBA74A1F4D6DDB78944A /* UIView+Size.swift in Sources */,
-				71E7A7882E8AC64F4ABFE089 /* View.swift in Sources */,
 				8D1F34A78F34E4479AABCDB8 /* WhipLayout.swift in Sources */,
 				DAB231C14D98464C84456AD0 /* Whipcream.swift in Sources */,
 			);

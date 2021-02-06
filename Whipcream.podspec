@@ -4,6 +4,7 @@ Pod::Spec.new do |spec|
   spec.summary      = "A short description of Whipcream."
 
   spec.description  = <<-DESC
+  Whipcream is UI lib.
                    DESC
 
   spec.homepage     = "https://shotastage.github.io/whipped-cream/"

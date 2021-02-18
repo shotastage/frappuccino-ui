@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "Whipcream"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A short description of Whipcream."
 
   spec.description  = <<-DESC
@@ -24,6 +24,7 @@ Pod::Spec.new do |spec|
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
+  spec.swift_versions = ['5.1', '5.2', '5.3']
 
   spec.source       = { :git => "https://github.com/shotastage/whipped-cream.git", :tag => "#{spec.version}" }
 

@@ -24,6 +24,6 @@ let package = Package(
             path: "Whipcream"),
         .testTarget(
             name: "WhipcreamTests",
-            dependencies: ["whipcream-swift"]),
+            dependencies: ["Whipcream"]),
     ]
 )
